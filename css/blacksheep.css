@@ -1,0 +1,611 @@
+/*Style Sheet: blacksheep.css*/
+/*Master style sheet for blacksheep.js, a professional utility library and API extension for Oracle Siebel CRM.*/
+/*Register as new custom style sheet or copy content to existing custom style sheet*/
+/*(c) 2016-2017 Alexander Hansal*/
+
+/* Progress bar */
+.ui-progressbar{
+    height: 2em;
+    border: solid darkgrey 1px;
+    display: inline-block;
+    padding: 0px!important;
+    width: 400px;
+    height: 10px;
+}
+.ui-progressbar-value{
+    display: block!important;
+    height: 100%;
+}
+
+.blacksheep-progressbar{
+    width: 100%;
+    height: 5px;
+    border: 0;
+    left: -7px;
+    position: relative;
+}
+.blacksheep-progressbar-required{
+    background: red!important;
+}
+.blacksheep-progressbar-tip{
+    background: #fbfbcb;
+    float: right;
+    position: relative;
+    font-size: 0.85em;
+}
+.blacksheep-progressbar-tip-required{
+    background: red!important;
+    font-weight: bold!important;
+    color: white!important;
+}
+.blacksheep-progressbar-header-fix{
+    margin-bottom: -20px!important;
+}
+
+/*Tramp Stamp*/
+.blacksheep-trampstamp{
+    position: absolute;
+    float: right;
+    bottom: 5px;
+    right: 5px;
+    height: 40px;
+    width: 40px;
+    z-index: 9001;
+    cursor: help;
+    background-size: contain;
+}
+
+/*Main Dialog*/
+.blacksheep-logo-dlg{
+    height: 40px;
+    width: 40px;
+    float: left;
+    }
+
+.blacksheep-trampstamp,
+.blacksheep-logo-dlg{
+    /*background-image: url('data:image/png;base64,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');*/
+    background-image: url('http://blacksheep-crm.com/wp-content/uploads/bs_40x40_t.png');
+}
+.blacksheep-dialog .ui-dialog-titlebar-close{
+    visibility: hidden;
+    display: none;
+}
+
+
+#bs_ts_tabs li{
+    background: #ddd;
+    border-radius: 5px 5px 0px 0px;
+    padding: 4px;
+    margin: 0 1px 0 1px;
+}
+#bs_ts_tabs li a{
+    color: black!important;
+    font-size: 1.2em;
+}
+#bs_ts_tabs li.ui-tabs-active{
+    background: black!important;
+
+}
+
+#bs_ts_tabs li.ui-tabs-active a{
+    color: white!important;
+ }
+/*View Map*/
+
+.blacksheep-module-header{
+    font-weight: bold;
+}
+.blacksheep-module-instructions{
+    font-size: 0.9em;
+    background: #fffacd;
+}
+
+.blacksheep-module-label{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.blacksheep-module-description{
+    font-size: 0.9em;
+}
+
+#bs_ts_module_content hr,
+#bs_ts_module_content p {
+    margin: 0px;
+}
+
+.blacksheep-viewmap-container{
+    background: lavender;
+}
+
+.blacksheep-viewmap-applet{
+    background: lightskyblue;
+    margin: 2px;
+    font-size: 0.8em;
+    position: absolute;
+    max-height: 340px;
+}
+
+.blacksheep-viewmap-dummy{
+    padding: 2px 0 0 2px;
+}
+
+.blacksheep-viewmap-applet-available{
+    background: lightsteelblue;
+    font-weight: bold;
+}
+.blacksheep-viewmap-applet-available:hover{
+    z-index: 1000;
+}
+.blacksheep-viewmap-applet-enabled{
+    background: lightgreen;
+    font-weight: bold;
+    border-style: groove;
+    border-width: 1px;
+}
+.blacksheep-viewmap-applet-enabled:hover{
+    z-index: 1000;
+}
+.blacksheep-content{
+    height: 350px;
+}
+.blacksheep-module-selected{
+    background: lightgreen;
+    font-weight: bold;
+}
+#bs_ts_tab2{
+    display: flex;
+}
+
+#bs_ts_module_content{
+    width:170px;
+    height: 340px;
+    overflow: auto;
+    padding: 0 0 0 2px;
+    border-right-style: solid;
+    border-right-color: lightgreen;
+}
+
+/*on/off switch*/
+/*https://proto.io/freebies/onoff/*/
+.onoffswitch {
+    position: relative; width: 61px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 18px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 14px; padding: 0; line-height: 14px;
+    font-size: 12px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #34C264; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #EEEEEE; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 14px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 43px;
+    border: 2px solid #999999; border-radius: 18px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+.blacksheep-useroptions-button{
+    cursor: pointer;
+    margin: 5px 0 0 10px;
+    font-size: 1.4em;
+}
+.blacksheep-useroptions-button::before{
+    font-family: 'oracle';
+    content:"\e61f";
+    color: #666;
+}
+.blacksheep-assistant-icon::before{
+    font-family: 'oracle';
+    content:"\e62f";
+    color: indigo;
+    font-size: 1.2em;
+
+}
+
+input[id*='storage_default']{
+    visibility: hidden;
+    display: none;
+}
+
+.blacksheep-hidden{
+    display: none;
+    visibility: hidden;
+}
+
+.blacksheep-xray-business-layer,
+.blacksheep-xray-business-layer div,
+.siebui-label span.blacksheep-xray-business-layer{
+    font-weight: bold!important;
+    color:red!important;
+    font-style: italic!important;
+}
+.blacksheep-xray-business-layer a{
+    text-decoration: underline;
+    cursor: pointer;
+    color:red!important;
+}
+.blacksheep-xray-button-method{
+    display: block!important;
+    color: red;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.blacksheep-xray-business-layer>div.ui-jqgrid-sortable{
+    white-space: pre-wrap;
+    height: 40px!important;
+    line-height: 14px!important;
+    font-size: 10pt!important;
+}
+
+.blacksheep-xray-database,
+.blacksheep-xray-database div,
+.siebui-label span.blacksheep-xray-database>span
+{
+    font-weight: bold!important;
+    color:darkolivegreen!important;
+    font-style: italic!important;
+}
+.blacksheep-xray-database>div.ui-jqgrid-sortable span a,{
+    color:darkolivegreen!important;
+    cursor: pointer;
+}
+.blacksheep-xray-database>div.ui-jqgrid-sortable{
+    white-space: pre-wrap;
+    height: 40px!important;
+    line-height: 14px!important;
+    font-size: 10pt!important;
+}
+
+
+
+.blacksheep-xray-logicalui,
+.blacksheep-xray-logicalui div,
+.siebui-label span.blacksheep-xray-logicalui{
+    font-weight: bold!important;
+    color:darkslateblue!important;
+    font-style: italic!important;
+}
+.blacksheep-xray-button-logical{
+    display: block!important;
+    color: darkslateblue;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.blacksheep-xray-logicalui>div.ui-jqgrid-sortable{
+    white-space: pre-wrap;
+    height: 40px!important;
+    line-height: 14px!important;
+    font-size: 10pt!important;
+}
+.blacksheep-xray-logicalui a{
+    text-decoration: underline;
+    cursor: pointer;
+    color:darkslateblue;
+}
+
+
+.blacksheep-xray-openui,
+.blacksheep-xray-openui div,
+.blacksheep-xray-openui a,
+.siebui-label span.blacksheep-xray-openui{
+    font-weight: bold!important;
+    color:darkgoldenrod!important;
+    font-style: italic!important;
+}
+
+.blacksheep-xray-openui a{
+    text-decoration: underline;
+    cursor: pointer;
+    color:darkgoldenrod!important;
+}
+
+.blacksheep-xray-button-openui{
+    display: block!important;
+    color: darkgoldenrod;
+    font-size: 10pt;
+    font-weight: bold;
+}
+.blacksheep-xray-openui>div.ui-jqgrid-sortable{
+    white-space: pre-wrap;
+    height: 40px!important;
+    line-height: 14px!important;
+    font-size: 10pt!important;
+}
+
+/*star rating*/
+/*kudos: https://jsfiddle.net/leaverou/CGP87/ */
+.blacksheep-rating {
+    float:left;
+    border:0;
+    padding: 2px 0px 0px 10px;
+}
+
+/* :not(:checked) is a filter, so that browsers that don’t support :checked don’t
+   follow these rules. Every browser that supports :checked also supports :not(), so
+   it doesn’t make the test unnecessarily selective */
+.blacksheep-rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+    clip:rect(0,0,0,0);
+}
+
+.blacksheep-rating:not(:checked) > label {
+    float:right;
+    width:1em;
+    padding:0 .1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:200%;
+    line-height:1.2;
+    color:#ddd;
+    text-shadow:1px 1px #bbb, 2px 2px #666, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.blacksheep-rating:not(:checked) > label:before {
+    content: '★ ';
+}
+
+.blacksheep-rating > input:checked ~ label {
+    color: #f70;
+    text-shadow:1px 1px #c60, 2px 2px #940, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.blacksheep-rating:not(:checked) > label:hover,
+.blacksheep-rating:not(:checked) > label:hover ~ label {
+    color: gold;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.blacksheep-rating > input:checked + label:hover,
+.blacksheep-rating > input:checked + label:hover ~ label,
+.blacksheep-rating > input:checked ~ label:hover,
+.blacksheep-rating > input:checked ~ label:hover ~ label,
+.blacksheep-rating > label:hover ~ input:checked ~ label {
+    color: #ea0;
+    text-shadow:1px 1px goldenrod, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+}
+
+.blacksheep-rating > label:active {
+    position:relative;
+    top:2px;
+    left:2px;
+}
+
+.blacksheep-rating-display{
+    float: left;
+    padding: 2px;
+    margin: 10px;
+    background: lightgoldenrodyellow;
+    font-size: 0.9em;
+}
+
+.blacksheep-chart{
+    margin-top:20px;
+    margin-left:20px;
+    width:400px;
+    eight:300px;
+}
+.blacksheep-chart .jqplot-yaxis{
+    left : -12px!important;
+}
+
+.blacksheep-options-slider{
+    width: 70%;
+}
+.blacksheep-options-slider-display{
+    width: 25%;
+    left: 225px;
+    position: relative;
+    top: -8px;
+}
+
+.blacksheep-options-header{
+    font-size: 1.2em;
+    font-weight: bold;
+    background: lightgray;
+}
+/*blacksheep CSS repair clinic*/
+
+/* fix image in list applets*/
+.siebui-icon-Image>img{
+    height:20px;
+}
+
+/*fix z-index for applet menu when applet is resizable*/
+.siebui-appletmenu{
+    z-index: 10000!important;
+}
+
+/*jQuery UI slider*/
+.ui-slider {
+    position: relative;
+    text-align: left;
+    border-style:solid;
+    border-width: 1px;
+}
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 1.2em;
+    height: 1.2em;
+    cursor: default;
+    -ms-touch-action: none;
+    touch-action: none;
+    border-style:solid;
+    border-width: 1px;
+}
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    background-position: 0 0;
+}
+
+/* support: IE8 - See #6727 */
+.ui-slider.ui-state-disabled .ui-slider-handle,
+.ui-slider.ui-state-disabled .ui-slider-range {
+    filter: inherit;
+}
+
+.ui-slider-horizontal {
+    height: .8em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -.3em;
+    margin-left: -.6em;
+    background: whitesmoke;
+}
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+}
+
+.ui-slider-vertical {
+    width: .8em;
+    height: 100px;
+}
+.ui-slider-vertical .ui-slider-handle {
+    left: -.3em;
+    margin-left: 0;
+    margin-bottom: -.6em;
+}
+.ui-slider-vertical .ui-slider-range {
+    left: 0;
+    width: 100%;
+}
+.ui-slider-vertical .ui-slider-range-min {
+    bottom: 0;
+}
+.ui-slider-vertical .ui-slider-range-max {
+    top: 0;
+}
+
+/*Data Importer*/
+.siebui-icon-tb-data_import::before{
+    content: "\e691";
+    font-family: oracle;
+}
+.siebui-icon-tb-data_import>img{
+    width:0;
+    display: none;
+}
+
+#blacksheep_data_import_wait .ui-progressbar-value {
+    background-color: lightskyblue;
+    border:0;
+}
+#blacksheep_data_import_wait.ui-progressbar{
+    border: 0px;
+    padding: 0px!important;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#blacksheep_data_import_wait .ui-progressbar-overlay {
+    background: url("data:image/gif;base64,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");
+    height: 100%;
+    opacity: 0.25;
+    width: 100%;
+    border:0;
+}
+
+.blacksheep-loading-bar-label {
+    /*top: -10px;*/
+    font-weight: bold;
+    /*margin-top: 20px;*/
+    border:0;
+}
+
+.blacksheep-inactive-button{
+    background: lightgray;
+    pointer-events:none;
+}
+
+.blacksheep-data-import-title,
+.blacksheep-data-import-title td{
+    font-size:1.4em;
+    width:100%;
+    background:lightskyblue;
+    margin-bottom:10px;
+}
+
+.blacksheep-state-display{
+    width: 400px;
+    height: 35px;
+}
+
+.blacksheep-open-control-list-button{
+    margin-left: 20px;
+}
+.blacksheep-copt-table th,
+.blacksheep-copt-table td{
+   border-style: solid;
+    border-width: 1px;
+
+}
+.blacksheep-copt-table{
+    margin-left: 20px;
+}
+
+.blacksheep-autocomplete-pick{
+    border-width: 2px!important;
+    border-color: #9c1010!important;
+}
+
+.blacksheep-autocomplete-mvg{
+    border-width: 2px!important;
+    border-color: #9c1010!important;
+}
+
+.blacksheep-autocomplete-hd{
+    font-weight: bold;
+}
+
+.blacksheep-autocomplete-highlight-hd{
+    background: #ffff00;
+    color: black;
+}
+
+.blacksheep-autocomplete-highlight-aux{
+    background: #00ff00;
+    color: black;
+}
+
