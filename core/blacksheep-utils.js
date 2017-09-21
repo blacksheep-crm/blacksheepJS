@@ -1,4 +1,4 @@
-/*******************************************************************
+/********************************************************************
  * File:          blacksheep-utils.js
  * Author:        Alexander Hansal (alex@blacksheep-crm.com)
  * Description:   Extension file for blacksheep.js, a professional utility library and API extension for Oracle Siebel CRM.
