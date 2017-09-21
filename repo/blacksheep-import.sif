@@ -1,0 +1,1585 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   UPDATED="04/03/2015 10:52:46"
+   UPDATED_BY="SADMIN"
+   CREATED="04/03/2015 09:43:41"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   INACTIVE="N"
+	   LANGUAGE_LOCKED="ENU"
+	   LOCKED="Y"
+	   LOCKED_DATE="03/29/2017 16:50:58"
+	   NAME="Toolbar"
+	   UI_FREEZE="N"
+	   LOCKED_BY_NAME="SADMIN"
+	   UPDATED="03/29/2017 16:51:53"
+	   UPDATED_BY="SADMIN"
+	   CREATED="08/09/1997 16:27:46"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<TOOLBAR
+		   COMMENTS="SWE standard HI toolbar"
+		   DISPLAY_NAME_-_STRING_REFERENCE="SBL_MAIN-1004231134-005"
+		   INACTIVE="N"
+		   NAME="HIMain"
+		   OBJECT_LOCKED="N"
+		   UPDATED="03/29/2017 16:51:53"
+		   UPDATED_BY="SADMIN"
+		   CREATED="02/21/2002 06:52:24"
+		   CREATED_BY="SADMIN">
+			<TOOLBAR_ITEM
+			   COMMAND="SLM Create Apply Popup - App"
+			   DISPLAY_NAME_-_STRING_REFERENCE="SBL_APPLY_TARGET_LIST-1009085826-0LL"
+			   HTML_TYPE="Link"
+			   INACTIVE="N"
+			   NAME="Apply Target List"
+			   POSITION="2"
+			   REFLECTION="N"
+			   UPDATED="10/09/2014 03:26:15"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/09/2014 03:26:15"
+			   CREATED_BY="SADMIN">
+			</TOOLBAR_ITEM>
+			<TOOLBAR_ITEM
+			   COMMAND="Apply Target List (SWE)"
+			   COMMENTS="LS added for Targeting."
+			   HTML_TYPE="Link"
+			   INACTIVE="Y"
+			   NAME="ApplyTargetList"
+			   POSITION="1"
+			   REFLECTION="N"
+			   UPDATED="06/03/2003 21:18:47"
+			   UPDATED_BY="SADMIN"
+			   CREATED="06/03/2003 21:17:55"
+			   CREATED_BY="SADMIN">
+				<TOOLBAR_ITEM_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="LS Apply Target List"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   REDO="N"
+				   TRANSLATE="Y"
+				   UPDATED="06/03/2003 21:18:46"
+				   UPDATED_BY="SADMIN"
+				   CREATED="06/03/2003 21:18:46"
+				   CREATED_BY="SADMIN">
+				</TOOLBAR_ITEM_LOCALE>
+			</TOOLBAR_ITEM>
+			<TOOLBAR_ITEM
+			   COMMAND="blacksheep Import Command"
+			   HTML_TYPE="Link"
+			   INACTIVE="N"
+			   NAME="Data Import"
+			   POSITION="8"
+			   REFLECTION="N"
+			   UPDATED="03/29/2017 16:51:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 16:51:08"
+			   CREATED_BY="SADMIN">
+				<TOOLBAR_ITEM_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="blacksheep Data Import"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   REDO="N"
+				   TRANSLATE="Y"
+				   UPDATED="03/29/2017 16:51:53"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 16:51:53"
+				   CREATED_BY="SADMIN">
+				</TOOLBAR_ITEM_LOCALE>
+			</TOOLBAR_ITEM>
+			<TOOLBAR_ITEM
+			   COMMAND="SLM Create Save Popup - App"
+			   DISPLAY_NAME_-_STRING_REFERENCE="SBL_SAVE_TARGET_LIST-1009091149-09A"
+			   HTML_TYPE="Link"
+			   INACTIVE="N"
+			   NAME="Save Target List"
+			   POSITION="3"
+			   REFLECTION="N"
+			   UPDATED="11/17/2014 07:47:14"
+			   UPDATED_BY="SADMIN"
+			   CREATED="10/09/2014 03:26:15"
+			   CREATED_BY="SADMIN">
+			</TOOLBAR_ITEM>
+			<TOOLBAR_ITEM
+			   COMMAND="Save Target List (SWE)"
+			   COMMENTS="LS added for Targeting."
+			   HTML_TYPE="Link"
+			   INACTIVE="Y"
+			   NAME="SaveTargetList"
+			   POSITION="4"
+			   REFLECTION="N"
+			   UPDATED="11/17/2014 07:47:54"
+			   UPDATED_BY="SADMIN"
+			   CREATED="06/03/2003 21:17:55"
+			   CREATED_BY="SADMIN">
+				<TOOLBAR_ITEM_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="LS Save Target List"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   REDO="N"
+				   TRANSLATE="Y"
+				   UPDATED="06/03/2003 21:18:48"
+				   UPDATED_BY="SADMIN"
+				   CREATED="06/03/2003 21:18:48"
+				   CREATED_BY="SADMIN">
+				</TOOLBAR_ITEM_LOCALE>
+			</TOOLBAR_ITEM>
+			<TOOLBAR_ITEM
+			   COMMAND="Sitemap"
+			   DISPLAY_NAME_-_STRING_REFERENCE="SBL_SITE_MAP-1004225833-05L"
+			   HTML_TYPE="Link"
+			   INACTIVE="N"
+			   NAME="SiteMap"
+			   POSITION="6"
+			   REFLECTION="N"
+			   UPDATED="11/17/2014 07:48:04"
+			   UPDATED_BY="SADMIN"
+			   CREATED="02/21/2002 06:52:24"
+			   CREATED_BY="SADMIN">
+			</TOOLBAR_ITEM>
+			<TOOLBAR_ITEM
+			   INACTIVE="Y"
+			   NAME="_sep1_"
+			   POSITION="5"
+			   REFLECTION="N"
+			   TYPE="Separator"
+			   UPDATED="11/17/2014 07:48:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="02/21/2002 06:57:00"
+			   CREATED_BY="SADMIN">
+			</TOOLBAR_ITEM>
+			<TOOLBAR_ITEM
+			   INACTIVE="N"
+			   NAME="_sep2_"
+			   POSITION="7"
+			   REFLECTION="N"
+			   TYPE="Separator"
+			   UPDATED="11/17/2014 07:48:23"
+			   UPDATED_BY="SADMIN"
+			   CREATED="06/03/2003 21:17:55"
+			   CREATED_BY="SADMIN">
+			</TOOLBAR_ITEM>
+		</TOOLBAR>
+	</PROJECT>
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   INACTIVE="N"
+	   LANGUAGE_LOCKED="ENU"
+	   LOCKED="Y"
+	   LOCKED_DATE="01/15/2017 09:25:41"
+	   NAME="blacksheep.js"
+	   UI_FREEZE="N"
+	   LOCKED_BY_NAME="SADMIN"
+	   UPDATED="04/01/2017 19:12:36"
+	   UPDATED_BY="SADMIN"
+	   CREATED="01/15/2017 09:25:34"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<APPLET
+		   CLASS="CSSSWEFRTaskImpExp"
+		   DISABLE_DATALOSS_WARNING="N"
+		   HEIGHT="1"
+		   INACTIVE="N"
+		   NAME="blacksheep Import Popup Applet"
+		   NO_DELETE="N"
+		   NO_INSERT="N"
+		   NO_MERGE="N"
+		   NO_UPDATE="N"
+		   OBJECT_LANGUAGE_LOCKED="ENU"
+		   OBJECT_LOCKED="Y"
+		   OBJECT_LOCKED_DATE="03/29/2017 12:58:28"
+		   POPUP_DIMENSION="300 X 200"
+		   RESPONSIVE_FLAG="Y"
+		   SCRIPTED="N"
+		   TYPE="Standard"
+		   UPGRADE_BEHAVIOR="Preserve"
+		   WIDTH="2"
+		   OBJECT_LOCKED_BY_NAME="SADMIN"
+		   UPDATED="03/29/2017 12:59:27"
+		   UPDATED_BY="SADMIN"
+		   CREATED="03/29/2017 12:58:07"
+		   CREATED_BY="SADMIN">
+			<APPLET_LOCALE
+			   APPLICATION_CODE="STD"
+			   INACTIVE="N"
+			   LANGUAGE_CODE="ENU"
+			   NAME="ENU-STD"
+			   REDO="N"
+			   TITLE="blacksheep Import"
+			   TRANSLATE="Y"
+			   UPDATED="03/29/2017 12:58:28"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:58:08"
+			   CREATED_BY="SADMIN">
+			</APPLET_LOCALE>
+			<APPLET_USER_PROP
+			   INACTIVE="N"
+			   NAME="Import Business Service"
+			   VALUE="blacksheep Import Wrapper"
+			   UPDATED="03/29/2017 12:59:03"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:58:08"
+			   CREATED_BY="SADMIN">
+			</APPLET_USER_PROP>
+			<APPLET_USER_PROP
+			   INACTIVE="N"
+			   NAME="Import Method"
+			   VALUE="RunProcess"
+			   UPDATED="03/29/2017 12:59:07"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:58:08"
+			   CREATED_BY="SADMIN">
+			</APPLET_USER_PROP>
+			<APPLET_WEB_TEMPLATE
+			   EXT_WEB_TEMPLATE="Popup Form"
+			   INACTIVE="N"
+			   NAME="Base"
+			   SEQUENCE="0"
+			   TYPE="Base"
+			   WEB_TEMPLATE="Popup Form"
+			   UPDATED="03/29/2017 12:58:07"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:58:07"
+			   CREATED_BY="SADMIN">
+				<APPLET_WEB_TEMPLATE_ITEM
+				   CONTROL="AppletTitle"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="179"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="AppletTitle"
+				   TYPE="Control"
+				   UPDATED="03/29/2017 12:58:07"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:58:07"
+				   CREATED_BY="SADMIN">
+				</APPLET_WEB_TEMPLATE_ITEM>
+				<APPLET_WEB_TEMPLATE_ITEM
+				   CONTROL="AppletTitle"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="91"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="AppletTitle2"
+				   TMPL_ITEM_HOLDER_NAME="SiebControl_91"
+				   TYPE="Control"
+				   UPDATED="03/29/2017 12:58:07"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:58:07"
+				   CREATED_BY="SADMIN">
+				</APPLET_WEB_TEMPLATE_ITEM>
+				<APPLET_WEB_TEMPLATE_ITEM
+				   CONTROL="Browse"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="1196"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Browse"
+				   TMPL_ITEM_HOLDER_NAME="SiebControl_1196"
+				   TYPE="Control"
+				   UPDATED="03/29/2017 12:58:07"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:58:07"
+				   CREATED_BY="SADMIN">
+				</APPLET_WEB_TEMPLATE_ITEM>
+				<APPLET_WEB_TEMPLATE_ITEM
+				   CONTROL="Cancel"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="142"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Cancel"
+				   TMPL_ITEM_HOLDER_NAME="SiebControl_142"
+				   TYPE="Control"
+				   UPDATED="03/29/2017 12:58:07"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:58:07"
+				   CREATED_BY="SADMIN">
+				</APPLET_WEB_TEMPLATE_ITEM>
+				<APPLET_WEB_TEMPLATE_ITEM
+				   COMMENTS="Modified by 7.7 Inactivate Redundant Method-Invoked Mappings Tools Patch: Inactivated since another control is already mapped with the same method-invoked"
+				   CONTROL="Cancel"
+				   INACTIVE="Y"
+				   ITEM_IDENTIFIER="153"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Cancel2"
+				   TMPL_ITEM_HOLDER_NAME="SiebControl_153"
+				   TYPE="Control"
+				   UPDATED="03/29/2017 12:58:07"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:58:07"
+				   CREATED_BY="SADMIN">
+				</APPLET_WEB_TEMPLATE_ITEM>
+				<APPLET_WEB_TEMPLATE_ITEM
+				   CONTROL="Import"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="141"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Import"
+				   TMPL_ITEM_HOLDER_NAME="SiebControl_141"
+				   TYPE="Control"
+				   UPDATED="03/29/2017 12:58:07"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:58:07"
+				   CREATED_BY="SADMIN">
+				</APPLET_WEB_TEMPLATE_ITEM>
+				<APPLET_WEB_TEMPLATE_ITEM
+				   CONTROL="Import"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="152"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Import2"
+				   TMPL_ITEM_HOLDER_NAME="SiebControl_152"
+				   TYPE="Control"
+				   UPDATED="03/29/2017 12:58:07"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:58:07"
+				   CREATED_BY="SADMIN">
+				</APPLET_WEB_TEMPLATE_ITEM>
+			</APPLET_WEB_TEMPLATE>
+			<APPLET_WEB_TEMPLATE
+			   EXT_WEB_TEMPLATE="Popup Form"
+			   INACTIVE="N"
+			   NAME="Edit"
+			   SEQUENCE="0"
+			   TYPE="Edit"
+			   WEB_TEMPLATE="Popup Form"
+			   UPDATED="03/29/2017 12:58:07"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:58:07"
+			   CREATED_BY="SADMIN">
+				<APPLET_WEB_TEMPLATE_ITEM
+				   CONTROL="AppletTitle"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="91"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="AppletTitle"
+				   TMPL_ITEM_HOLDER_NAME="SiebControl_91"
+				   TYPE="Control"
+				   UPDATED="03/29/2017 12:58:07"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:58:07"
+				   CREATED_BY="SADMIN">
+				</APPLET_WEB_TEMPLATE_ITEM>
+				<APPLET_WEB_TEMPLATE_ITEM
+				   CONTROL="Browse"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="1196"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Browse"
+				   TMPL_ITEM_HOLDER_NAME="SiebControl_1196"
+				   TYPE="Control"
+				   UPDATED="03/29/2017 12:58:07"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:58:07"
+				   CREATED_BY="SADMIN">
+				</APPLET_WEB_TEMPLATE_ITEM>
+				<APPLET_WEB_TEMPLATE_ITEM
+				   CONTROL="Cancel"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="110"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Cancel"
+				   TMPL_ITEM_HOLDER_NAME="SiebControl_110"
+				   TYPE="Control"
+				   UPDATED="03/29/2017 12:58:07"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:58:07"
+				   CREATED_BY="SADMIN">
+				</APPLET_WEB_TEMPLATE_ITEM>
+				<APPLET_WEB_TEMPLATE_ITEM
+				   CONTROL="Import"
+				   INACTIVE="N"
+				   ITEM_IDENTIFIER="109"
+				   MARKUP_LANGUAGE="HTML"
+				   NAME="Import"
+				   TMPL_ITEM_HOLDER_NAME="SiebControl_109"
+				   TYPE="Control"
+				   UPDATED="03/29/2017 12:58:07"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:58:07"
+				   CREATED_BY="SADMIN">
+				</APPLET_WEB_TEMPLATE_ITEM>
+			</APPLET_WEB_TEMPLATE>
+			<CONTROL
+			   AUTOMATIC_HORIZONTAL_SCROLL="Y"
+			   AUTOMATIC_VERTICAL_SCROLL="N"
+			   DEFAULT_BUTTON="N"
+			   GROUP="Y"
+			   HTML_DEFAULT_CONTROL="N"
+			   HTML_DISPLAY_MODE="EncodeData"
+			   HTML_ONLY="N"
+			   HTML_ROW_SENSITIVE="Y"
+			   HTML_TYPE="Text"
+			   HEIGHT="10"
+			   INACTIVE="N"
+			   MULTI_LINE="N"
+			   NAME="AppletTitle"
+			   OWNER_DRAW="N"
+			   POPUP_EDIT="N"
+			   PROMPT="N"
+			   READ_ONLY="N"
+			   RUNTIME="N"
+			   SHOW_POPUP="N"
+			   SORT="Y"
+			   TAB_STOP="N"
+			   TEXT_ALIGNMENT="Left"
+			   TEXT_ALIGNMENT-LABEL="Right"
+			   TOP="0"
+			   TYPE="Label"
+			   VERTICAL_SCROLL="N"
+			   VISIBLE="Y"
+			   WANT_RETURN="N"
+			   WIDTH="40"
+			   UPDATED="03/29/2017 12:58:43"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:58:08"
+			   CREATED_BY="SADMIN">
+				<CONTROL_LOCALE
+				   APPLICATION_CODE="STD"
+				   CAPTION="blacksheep Import"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   VISIBLE="Y"
+				   UPDATED="03/29/2017 12:58:43"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:58:08"
+				   CREATED_BY="SADMIN">
+				</CONTROL_LOCALE>
+			</CONTROL>
+			<CONTROL
+			   AUTOMATIC_HORIZONTAL_SCROLL="Y"
+			   AUTOMATIC_VERTICAL_SCROLL="N"
+			   CAPTION_-_STRING_REFERENCE="SBL_BROWSE-1004224457-0G8"
+			   DEFAULT_BUTTON="Y"
+			   GROUP="N"
+			   HTML_DEFAULT_CONTROL="Y"
+			   HTML_DISPLAY_MODE="EncodeData"
+			   HTML_ONLY="Y"
+			   HTML_ROW_SENSITIVE="Y"
+			   HTML_TYPE="File"
+			   HEIGHT="10"
+			   INACTIVE="N"
+			   MULTI_LINE="N"
+			   NAME="Browse"
+			   OWNER_DRAW="N"
+			   POPUP_EDIT="Y"
+			   PROMPT="N"
+			   READ_ONLY="N"
+			   RUNTIME="N"
+			   SHOW_POPUP="N"
+			   SORT="Y"
+			   TAB_STOP="Y"
+			   TEXT_ALIGNMENT="Left"
+			   TEXT_ALIGNMENT-LABEL="Right"
+			   TOP="0"
+			   TYPE="PushButton"
+			   VERTICAL_SCROLL="N"
+			   VISIBLE="Y"
+			   WANT_RETURN="N"
+			   WIDTH="40"
+			   UPDATED="03/29/2017 12:58:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:58:08"
+			   CREATED_BY="SADMIN">
+				<CONTROL_LOCALE
+				   APPLICATION_CODE="STD"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   VISIBLE="Y"
+				   UPDATED="03/29/2017 12:58:08"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:58:08"
+				   CREATED_BY="SADMIN">
+				</CONTROL_LOCALE>
+			</CONTROL>
+			<CONTROL
+			   AUTOMATIC_HORIZONTAL_SCROLL="Y"
+			   AUTOMATIC_VERTICAL_SCROLL="N"
+			   CAPTION_-_STRING_REFERENCE="SBL_CANCEL-1004230137-1J7"
+			   DEFAULT_BUTTON="N"
+			   GROUP="N"
+			   HTML_DEFAULT_CONTROL="N"
+			   HTML_DISPLAY_MODE="EncodeData"
+			   HTML_ONLY="Y"
+			   HTML_ROW_SENSITIVE="Y"
+			   HTML_TYPE="MiniButton"
+			   HEIGHT="10"
+			   INACTIVE="N"
+			   METHOD_INVOKED="Cancel"
+			   MULTI_LINE="N"
+			   NAME="Cancel"
+			   OWNER_DRAW="N"
+			   POPUP_EDIT="N"
+			   PROMPT="N"
+			   READ_ONLY="N"
+			   RUNTIME="N"
+			   SHOW_POPUP="N"
+			   SORT="Y"
+			   TAB_STOP="Y"
+			   TEXT_ALIGNMENT="Left"
+			   TEXT_ALIGNMENT-LABEL="Right"
+			   TOP="0"
+			   TYPE="PushButton"
+			   VERTICAL_SCROLL="N"
+			   VISIBLE="Y"
+			   WANT_RETURN="N"
+			   WIDTH="40"
+			   UPDATED="03/29/2017 12:58:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:58:08"
+			   CREATED_BY="SADMIN">
+				<CONTROL_LOCALE
+				   APPLICATION_CODE="STD"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   VISIBLE="Y"
+				   UPDATED="03/29/2017 12:58:08"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:58:08"
+				   CREATED_BY="SADMIN">
+				</CONTROL_LOCALE>
+			</CONTROL>
+			<CONTROL
+			   AUTOMATIC_HORIZONTAL_SCROLL="Y"
+			   AUTOMATIC_VERTICAL_SCROLL="N"
+			   CAPTION_-_STRING_REFERENCE="SBL_IMPORT-1005000053-6GR"
+			   DEFAULT_BUTTON="N"
+			   GROUP="N"
+			   HTML_DEFAULT_CONTROL="N"
+			   HTML_DISPLAY_MODE="EncodeData"
+			   HTML_ONLY="Y"
+			   HTML_ROW_SENSITIVE="Y"
+			   HTML_TYPE="MiniButton"
+			   HEIGHT="10"
+			   INACTIVE="N"
+			   METHOD_INVOKED="Import"
+			   MULTI_LINE="N"
+			   NAME="Import"
+			   OWNER_DRAW="N"
+			   POPUP_EDIT="N"
+			   PROMPT="N"
+			   READ_ONLY="N"
+			   RUNTIME="N"
+			   SHOW_POPUP="N"
+			   SORT="Y"
+			   TAB_STOP="Y"
+			   TEXT_ALIGNMENT="Left"
+			   TEXT_ALIGNMENT-LABEL="Right"
+			   TOP="0"
+			   TYPE="PushButton"
+			   VERTICAL_SCROLL="N"
+			   VISIBLE="Y"
+			   WANT_RETURN="N"
+			   WIDTH="40"
+			   UPDATED="03/29/2017 12:58:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:58:08"
+			   CREATED_BY="SADMIN">
+				<CONTROL_LOCALE
+				   APPLICATION_CODE="STD"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   VISIBLE="Y"
+				   UPDATED="03/29/2017 12:58:08"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:58:08"
+				   CREATED_BY="SADMIN">
+				</CONTROL_LOCALE>
+			</CONTROL>
+			<CONTROL
+			   AUTOMATIC_HORIZONTAL_SCROLL="Y"
+			   AUTOMATIC_VERTICAL_SCROLL="N"
+			   CAPTION_-_STRING_REFERENCE="SBL_CANCEL-1004230137-1J7"
+			   COMMENTS="UndoQuery control created during Template Merge"
+			   DEFAULT_BUTTON="N"
+			   GROUP="N"
+			   HTML_DEFAULT_CONTROL="N"
+			   HTML_DISPLAY_MODE="EncodeData"
+			   HTML_ONLY="N"
+			   HTML_ROW_SENSITIVE="Y"
+			   HTML_TYPE="MiniButtonQuery"
+			   HEIGHT="10"
+			   INACTIVE="N"
+			   METHOD_INVOKED="UndoQuery"
+			   MULTI_LINE="N"
+			   NAME="UndoQuery"
+			   OWNER_DRAW="N"
+			   POPUP_EDIT="N"
+			   PROMPT="N"
+			   READ_ONLY="N"
+			   RUNTIME="N"
+			   SHOW_POPUP="N"
+			   SORT="Y"
+			   TAB_STOP="Y"
+			   TEXT_ALIGNMENT="Left"
+			   TEXT_ALIGNMENT-LABEL="Right"
+			   TOP="0"
+			   TYPE="PushButton"
+			   VERTICAL_SCROLL="N"
+			   VISIBLE="Y"
+			   WANT_RETURN="N"
+			   WIDTH="40"
+			   UPDATED="03/29/2017 12:58:08"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:58:08"
+			   CREATED_BY="SADMIN">
+				<CONTROL_LOCALE
+				   APPLICATION_CODE="STD"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   VISIBLE="Y"
+				   UPDATED="03/29/2017 12:58:08"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:58:08"
+				   CREATED_BY="SADMIN">
+				</CONTROL_LOCALE>
+			</CONTROL>
+		</APPLET>
+		<BUSINESS_OBJECT
+		   INACTIVE="N"
+		   NAME="blacksheep Workflow Process Monitor"
+		   OBJECT_LANGUAGE_LOCKED="ENU"
+		   OBJECT_LOCKED="Y"
+		   OBJECT_LOCKED_DATE="04/01/2017 17:14:17"
+		   PRIMARY_BUSINESS_COMPONENT="Workflow Process Instance Monitor"
+		   QUERY_LIST_BUSINESS_COMPONENT="Query List"
+		   OBJECT_LOCKED_BY_NAME="SADMIN"
+		   UPDATED="04/01/2017 17:14:42"
+		   UPDATED_BY="SADMIN"
+		   CREATED="04/01/2017 17:13:51"
+		   CREATED_BY="SADMIN">
+			<BUSINESS_OBJECT_COMPONENT
+			   BUSCOMP="Workflow Process Definition - Monitoring"
+			   INACTIVE="Y"
+			   NAME="Workflow Process Definition - Monitoring"
+			   UPDATED="04/01/2017 17:14:25"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 17:13:51"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_OBJECT_COMPONENT>
+			<BUSINESS_OBJECT_COMPONENT
+			   BUSCOMP="Workflow Process Instance Chart"
+			   INACTIVE="Y"
+			   NAME="Workflow Process Instance Chart"
+			   UPDATED="04/01/2017 17:14:30"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 17:13:51"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_OBJECT_COMPONENT>
+			<BUSINESS_OBJECT_COMPONENT
+			   BUSCOMP="Workflow Process Instance Monitor"
+			   INACTIVE="N"
+			   NAME="Workflow Process Instance Monitor"
+			   UPDATED="04/01/2017 17:14:42"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 17:13:51"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_OBJECT_COMPONENT>
+			<BUSINESS_OBJECT_COMPONENT
+			   BUSCOMP="Workflow Process Properties Instance Monitor"
+			   INACTIVE="N"
+			   LINK="Workflow Step Instance Monitor/Workflow Process Properties Instance Monitor"
+			   NAME="Workflow Process Properties Instance Monitor"
+			   UPDATED="04/01/2017 17:13:51"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 17:13:51"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_OBJECT_COMPONENT>
+			<BUSINESS_OBJECT_COMPONENT
+			   BUSCOMP="Workflow Step Instance Monitor"
+			   INACTIVE="N"
+			   LINK="Workflow Process Instance Monitor/Workflow Step Instance Monitor"
+			   NAME="Workflow Step Instance Monitor"
+			   UPDATED="04/01/2017 17:13:51"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 17:13:51"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_OBJECT_COMPONENT>
+		</BUSINESS_OBJECT>
+		<BUSINESS_SERVICE
+		   CACHE="Y"
+		   CLASS="CSSWfEngine"
+		   EXTERNAL_USE="Y"
+		   HIDDEN="N"
+		   INACTIVE="N"
+		   NAME="blacksheep Import Wrapper"
+		   OBJECT_LANGUAGE_LOCKED="ENU"
+		   OBJECT_LOCKED="Y"
+		   OBJECT_LOCKED_DATE="03/29/2017 12:31:31"
+		   SERVER_ENABLED="Y"
+		   STATE_MANAGEMENT_TYPE="Stateless"
+		   WEB_SERVICE_ENABLED="N"
+		   OBJECT_LOCKED_BY_NAME="SADMIN"
+		   UPDATED="03/29/2017 12:43:39"
+		   UPDATED_BY="SADMIN"
+		   CREATED="03/29/2017 12:31:10"
+		   CREATED_BY="SADMIN">
+			<BUSINESS_SERVICE_LOCALE
+			   APPLICATION_CODE="STD"
+			   DISPLAY_NAME="blacksheep Import Wrapper"
+			   INACTIVE="N"
+			   LANGUAGE_CODE="ENU"
+			   NAME="ENU-STD"
+			   TRANSLATE="Y"
+			   UPDATED="03/29/2017 12:31:31"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:31:31"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_LOCALE>
+			<BUSINESS_SERVICE_METHOD
+			   DISPLAY_NAME_-_STRING_REFERENCE="SBL_FREE_ENGINE-1004225050-091"
+			   HIDDEN="Y"
+			   INACTIVE="N"
+			   NAME="FreeEngine"
+			   UPDATED="03/29/2017 12:31:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:31:10"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   DISPLAY_NAME_-_STRING_REFERENCE="SBL_INITENGINE-1004225100-0GT"
+			   HIDDEN="Y"
+			   INACTIVE="N"
+			   NAME="InitEngine"
+			   UPDATED="03/29/2017 12:31:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:31:10"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="ResumeInstance"
+			   UPDATED="03/29/2017 12:31:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:31:10"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ProcessInstanceId"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="03/29/2017 12:31:10"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:31:10"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   DISPLAY_NAME_-_STRING_REFERENCE="SBL_EXECUTE_BATCH_PROCESS-1004225048-07U"
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="RunBatch"
+			   UPDATED="03/29/2017 12:31:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:31:10"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   DISPLAY_NAME_-_STRING_REFERENCE="SBL_NUMBER_OF_RECORDS_IN_ERROR-1004225225-0MR"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="NumInError"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="03/29/2017 12:31:10"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:31:10"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   DISPLAY_NAME_-_STRING_REFERENCE="SBL_NUMBER_OF_RECORDS_PROCESSED-1004225225-0MQ"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="NumProcessed"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="03/29/2017 12:31:10"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:31:10"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   COMMENTS="Checked the Optional flag to work around 12-14UQ1Y."
+				   DATA_TYPE="String"
+				   DISPLAY_NAME_-_STRING_REFERENCE="SBL_PROCESS_NAME-1004225239-0QV"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ProcessName"
+				   OPTIONAL="Y"
+				   PICK_FIELD="Process Name"
+				   PICKLIST="FOW Process Definition Pick"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="03/29/2017 12:31:10"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:31:10"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   DISPLAY_NAME_-_STRING_REFERENCE="SBL_SEARCH_SPECIFICATION-1004225302-0XC"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="SearchSpec"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="03/29/2017 12:31:10"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:31:10"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_METHOD
+			   DISPLAY_NAME_-_STRING_REFERENCE="SBL_EXECUTE_PROCESS-1004225048-07Z"
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="RunProcess"
+			   UPDATED="03/29/2017 12:31:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:31:10"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   DISPLAY_NAME_-_STRING_REFERENCE="SBL_ERROR_CODE-1004225150-0BZ"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ErrorCode"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="03/29/2017 12:31:10"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:31:10"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   DISPLAY_NAME_-_STRING_REFERENCE="SBL_ERROR_MESSAGE-1004231619-3JR"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ErrorMsg"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Output"
+				   UPDATED="03/29/2017 12:31:10"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:31:10"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   COMMENTS="Checked the Optional flag to work around 12-14UQ1Y."
+				   DATA_TYPE="String"
+				   DISPLAY_NAME_-_STRING_REFERENCE="SBL_PROCESS_NAME-1004225239-0QV"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="ProcessName"
+				   OPTIONAL="Y"
+				   PICK_FIELD="Process Name"
+				   PICKLIST="FOW Process Definition Pick"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="03/29/2017 12:31:10"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:31:10"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   DISPLAY_NAME_-_STRING_REFERENCE="SBL_OBJECT_ID-1004225227-0N1"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="RowId"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="03/29/2017 12:31:10"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/29/2017 12:31:10"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="Service_PreInvokeMethod"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function Service_PreInvokeMethod (MethodName, Inputs, Outputs)
+{
+	if (MethodName != &quot;&quot;)
+	{
+		//be clever
+		var inp = Inputs;
+
+	}
+	return (ContinueOperation);
+}"
+			   SEQUENCE="0"
+			   UPDATED="03/29/2017 12:42:02"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:40:51"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SUBSYSTEM
+			   COMMENTS="Added for Data Quality event log support"
+			   INACTIVE="N"
+			   NAME="DataQualitySubsys"
+			   SUBSYSTEM="DataQualitySubsys"
+			   UPDATED="03/29/2017 12:31:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:31:10"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SUBSYSTEM>
+			<BUSINESS_SERVICE_SUBSYSTEM
+			   INACTIVE="N"
+			   NAME="EAISubsys"
+			   SUBSYSTEM="EAISubsys"
+			   UPDATED="03/29/2017 12:31:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:31:10"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SUBSYSTEM>
+			<BUSINESS_SERVICE_SUBSYSTEM
+			   COMMENTS="Added for UCM server component parameter support."
+			   INACTIVE="N"
+			   NAME="InfraUCM"
+			   SUBSYSTEM="InfraUCM"
+			   UPDATED="03/29/2017 12:31:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:31:10"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SUBSYSTEM>
+			<BUSINESS_SERVICE_SUBSYSTEM
+			   COMMENTS="Added for Vertical component parameter support."
+			   INACTIVE="N"
+			   NAME="InfraVertical"
+			   SUBSYSTEM="InfraVertical"
+			   UPDATED="03/29/2017 12:31:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:31:10"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SUBSYSTEM>
+			<BUSINESS_SERVICE_SUBSYSTEM
+			   COMMENTS="Added for Loyalty Engine server component parameter support"
+			   INACTIVE="N"
+			   NAME="LoyEngineBatch"
+			   SUBSYSTEM="LoyEngineBatch"
+			   UPDATED="03/29/2017 12:31:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:31:10"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SUBSYSTEM>
+			<BUSINESS_SERVICE_SUBSYSTEM
+			   INACTIVE="N"
+			   NAME="Workflow"
+			   SUBSYSTEM="Workflow"
+			   UPDATED="03/29/2017 12:31:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:31:10"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SUBSYSTEM>
+			<BUSINESS_SERVICE_SUBSYSTEM
+			   INACTIVE="N"
+			   NAME="Workflow2"
+			   SUBSYSTEM="Workflow2"
+			   UPDATED="03/29/2017 12:31:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:31:10"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SUBSYSTEM>
+			<BUSINESS_SERVICE_SUBSYSTEM
+			   INACTIVE="N"
+			   NAME="XMLCnv"
+			   SUBSYSTEM="XMLCnv"
+			   UPDATED="03/29/2017 12:31:10"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:31:10"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SUBSYSTEM>
+			<BUSINESS_SERVICE_USER_PROP
+			   INACTIVE="N"
+			   NAME="ProcessName"
+			   VALUE="blacksheep Import Process"
+			   UPDATED="03/29/2017 12:31:38"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 12:31:38"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_USER_PROP>
+		</BUSINESS_SERVICE>
+		<COMMAND
+		   DYNAMIC_TOOLTIP="N"
+		   FORCE_ENABLE="N"
+		   HTML_POPUP_DIMENSION="320 X 160"
+		   INACTIVE="N"
+		   METHOD="GotoApplet"
+		   METHOD_ARGUMENT="blacksheep Import Popup Applet"
+		   NAME="blacksheep Import Command"
+		   OBJECT_LANGUAGE_LOCKED="ENU"
+		   OBJECT_LOCKED="Y"
+		   OBJECT_LOCKED_DATE="03/29/2017 10:58:38"
+		   SHOW_POPUP="Y"
+		   TARGET="Server"
+		   OBJECT_LOCKED_BY_NAME="SADMIN"
+		   UPDATED="03/29/2017 10:59:10"
+		   UPDATED_BY="SADMIN"
+		   CREATED="03/29/2017 10:57:48"
+		   CREATED_BY="SADMIN">
+			<COMMAND_LOCALE
+			   APPLICATION_CODE="STD"
+			   DISPLAY_NAME="Import Data"
+			   INACTIVE="N"
+			   LANGUAGE_CODE="ENU"
+			   NAME="ENU-STD"
+			   TRANSLATE="Y"
+			   UPDATED="03/29/2017 10:58:38"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/29/2017 10:58:38"
+			   CREATED_BY="SADMIN">
+			</COMMAND_LOCALE>
+		</COMMAND>
+		<WORKFLOW_PROCESS
+		   EDIT="N"
+		   INACTIVE="N"
+		   NAME="blacksheep Import Process: 6"
+		   OBJECT_LANGUAGE_LOCKED="ENU"
+		   OBJECT_LOCKED="Y"
+		   OBJECT_LOCKED_DATE="04/01/2017 19:10:04"
+		   PASS_BY_REF_HIERARCHY_ARGUMENT="N"
+		   PROCESS_NAME="blacksheep Import Process"
+		   REPLICATION_LEVEL="None"
+		   RUNNABLE="N"
+		   STATE_MANAGEMENT_TYPE="STATEFUL"
+		   STATUS="COMPLETED"
+		   VERSION="6"
+		   WEB_SERVICE_ENABLED="N"
+		   WORKFLOW_MODE="Service Flow"
+		   OBJECT_LOCKED_BY_NAME="SADMIN"
+		   UPDATED="04/01/2017 19:12:35"
+		   UPDATED_BY="SADMIN"
+		   CREATED="04/01/2017 19:10:04"
+		   CREATED_BY="SADMIN">
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="PROPSET_CHILD"
+			   INOUT="INOUT"
+			   NAME="BadRecords"
+			   UPDATED="04/01/2017 19:10:04"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 19:10:04"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Error Code"
+			   UPDATED="04/01/2017 19:10:04"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 19:10:04"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Error Message"
+			   UPDATED="04/01/2017 19:10:04"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 19:10:04"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   DEFAULT_STRING="C:\Users\sadmin\Desktop\temp\contacts.csv"
+			   INOUT="INOUT"
+			   NAME="FileName"
+			   UPDATED="04/01/2017 19:10:04"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 19:10:04"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="FileType"
+			   UPDATED="04/01/2017 19:10:04"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 19:10:04"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Object Id"
+			   UPDATED="04/01/2017 19:10:04"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 19:10:04"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Process Instance Id"
+			   UPDATED="04/01/2017 19:10:04"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 19:10:04"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="NUMBER"
+			   INOUT="INOUT"
+			   NAME="RecordsFromCSV"
+			   UPDATED="04/01/2017 19:10:04"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 19:10:04"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Siebel Operation Object Id"
+			   UPDATED="04/01/2017 19:10:04"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 19:10:04"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="PROPSET_CHILD"
+			   INOUT="INOUT"
+			   NAME="SiebelMessage"
+			   UPDATED="04/01/2017 19:10:04"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 19:10:04"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r13*576 24 672 729*FillBgClr8*167641088*ArrowEnd1*1"
+			   NAME="End 0"
+			   TYPE="END"
+			   UPDATED="04/01/2017 19:12:17"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 19:10:04"
+			   CREATED_BY="SADMIN">
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   BUSINESS_SERVICE_METHOD="CsvToPropSet"
+			   BUSINESS_SERVICE_NAME="Read CSV File"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r13*252 24 348 729*FillBgClr8*134217218*ArrowEnd1*1"
+			   NAME="Read CSV"
+			   TYPE="TASK"
+			   UPDATED="04/01/2017 19:10:04"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 19:10:04"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P16*408 484*NPts1*22*P06*348 484*ToHS1*08*ArrowEnd1*4"
+				   NAME="Connector 1"
+				   TO_STEP_NAME="Upsert"
+				   TYPE="CONNECTOR"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="04/01/2017 19:10:04"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2017 19:10:04"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Read CSV"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*7*0*0*0*9*LineWidth1*24*FrHS1*22*P16*408 484*NPts1*22*P06*348 484*ToHS1*08*ArrowEnd1*4"
+					   NAME="Connector 1"
+					   TO_STEP_NAME="Upsert"
+					   UPDATED="04/01/2017 19:10:04"
+					   UPDATED_BY="SADMIN"
+					   CREATED="04/01/2017 19:10:04"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="CsvFileName"
+				   PROPERTY_NAME="FileName"
+				   SEQUENCE="7"
+				   TYPE="PROPERTY"
+				   UPDATED="04/01/2017 19:10:04"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2017 19:10:04"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="DeleteFile"
+				   SEQUENCE="8"
+				   TYPE="LITERAL"
+				   VALUE_SEARCH_SPECIFICATION="false"
+				   UPDATED="04/01/2017 19:10:04"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2017 19:10:04"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="O"
+				   NAME="O:Read CSV100"
+				   OUTPUT_ARG="SiebelMessage"
+				   PROPERTY_NAME="SiebelMessage"
+				   SEQUENCE="10"
+				   TYPE="ARGUMENT"
+				   UPDATED="04/01/2017 19:10:04"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2017 19:10:04"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="O"
+				   NAME="O:Read CSV110"
+				   OUTPUT_ARG="SiebelMessageError"
+				   PROPERTY_NAME="BadRecords"
+				   SEQUENCE="11"
+				   TYPE="ARGUMENT"
+				   UPDATED="04/01/2017 19:10:04"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2017 19:10:04"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="O"
+				   NAME="O:Read CSV120"
+				   OUTPUT_ARG="NumRecords"
+				   PROPERTY_NAME="RecordsFromCSV"
+				   SEQUENCE="12"
+				   TYPE="ARGUMENT"
+				   UPDATED="04/01/2017 19:10:04"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2017 19:10:04"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r12*60 24 156 729*FillBgClr8*167641088*ArrowEnd1*1"
+			   NAME="Start"
+			   TYPE="START"
+			   UPDATED="04/01/2017 19:10:04"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 19:10:04"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*11*0*0*0*2*P57*132 1449*LineWidth1*22*P26*181 964*FrHS1*22*P16*181 484*NPts1*62*P06*144 482*P36*107 964*ToHS1*02*P47*107 1448*ArrowEnd1*4"
+				   NAME="Connector 3"
+				   TO_STEP_NAME="Store Process Instance Id"
+				   TYPE="DEFAULT"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="04/01/2017 19:10:04"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2017 19:10:04"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Start"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*11*0*0*0*2*P57*132 1449*LineWidth1*22*P26*181 964*FrHS1*22*P16*181 484*NPts1*62*P06*144 482*P36*107 964*ToHS1*02*P47*107 1448*ArrowEnd1*4"
+					   NAME="Connector 3"
+					   TO_STEP_NAME="Store Process Instance Id"
+					   UPDATED="04/01/2017 19:10:04"
+					   UPDATED_BY="SADMIN"
+					   CREATED="04/01/2017 19:10:04"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   BUSINESS_SERVICE_METHOD="SetProfileAttr"
+			   BUSINESS_SERVICE_NAME="SessionAccessService"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r15*492 120 588 1689*FillBgClr8*134217218*ArrowEnd1*1"
+			   NAME="Store Number of Records"
+			   TYPE="TASK"
+			   UPDATED="04/01/2017 19:12:32"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 19:10:14"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*11*0*0*0*2*P56*576 489*LineWidth1*22*P26*613 964*FrHS1*22*P17*613 1444*NPts1*62*P07*588 1442*P36*551 964*ToHS1*02*P46*551 488*ArrowEnd1*4"
+				   NAME="Connector 4"
+				   TO_STEP_NAME="End 0"
+				   TYPE="CONNECTOR"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="04/01/2017 19:12:32"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2017 19:12:26"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Store Number of Records"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*11*0*0*0*2*P56*576 489*LineWidth1*22*P26*613 964*FrHS1*22*P17*613 1444*NPts1*62*P07*588 1442*P36*551 964*ToHS1*02*P46*551 488*ArrowEnd1*4"
+					   NAME="Connector 4"
+					   TO_STEP_NAME="End 0"
+					   UPDATED="04/01/2017 19:12:32"
+					   UPDATED_BY="SADMIN"
+					   CREATED="04/01/2017 19:12:26"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="Name"
+				   SEQUENCE="1"
+				   TYPE="LITERAL"
+				   VALUE_SEARCH_SPECIFICATION="blacksheep_IMPORT_CSV_COUNT"
+				   UPDATED="04/01/2017 19:11:06"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2017 19:11:06"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="Value"
+				   SEQUENCE="2"
+				   TYPE="EXPRESSION"
+				   VALUE_SEARCH_SPECIFICATION="ToChar([&amp;RecordsFromCSV])"
+				   UPDATED="04/01/2017 19:12:17"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2017 19:11:31"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   BUSINESS_SERVICE_METHOD="SetProfileAttr"
+			   BUSINESS_SERVICE_NAME="SessionAccessService"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r15*132 120 228 1689*FillBgClr8*134217218*ArrowEnd1*1"
+			   NAME="Store Process Instance Id"
+			   TYPE="TASK"
+			   UPDATED="04/01/2017 19:10:04"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 19:10:04"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P26*240 484*FrHS1*22*P17*240 1444*NPts1*42*P07*228 1442*P36*252 484*ToHS1*08*ArrowEnd1*4"
+				   NAME="Connector 0"
+				   TO_STEP_NAME="Read CSV"
+				   TYPE="CONNECTOR"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="04/01/2017 19:10:04"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2017 19:10:04"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Store Process Instance Id"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P26*240 484*FrHS1*22*P17*240 1444*NPts1*42*P07*228 1442*P36*252 484*ToHS1*08*ArrowEnd1*4"
+					   NAME="Connector 0"
+					   TO_STEP_NAME="Read CSV"
+					   UPDATED="04/01/2017 19:10:04"
+					   UPDATED_BY="SADMIN"
+					   CREATED="04/01/2017 19:10:04"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="Name"
+				   SEQUENCE="1"
+				   TYPE="LITERAL"
+				   VALUE_SEARCH_SPECIFICATION="blacksheep_IMPORT_PID"
+				   UPDATED="04/01/2017 19:10:04"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2017 19:10:04"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="Value"
+				   PROPERTY_NAME="Process Instance Id"
+				   SEQUENCE="2"
+				   TYPE="PROPERTY"
+				   UPDATED="04/01/2017 19:10:04"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2017 19:10:04"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   BUSINESS_SERVICE_METHOD="Upsert"
+			   BUSINESS_SERVICE_NAME="EAI Siebel Adapter"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r13*408 24 504 729*FillBgClr8*134217218*ArrowEnd1*1"
+			   NAME="Upsert"
+			   TYPE="TASK"
+			   UPDATED="04/01/2017 19:12:32"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/01/2017 19:10:04"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*11*0*0*0*2*P57*492 1449*LineWidth1*22*P26*529 964*FrHS1*22*P16*529 484*NPts1*62*P06*504 482*P36*467 964*ToHS1*02*P47*467 1448*ArrowEnd1*4"
+				   NAME="Connector 2"
+				   TO_STEP_NAME="Store Number of Records"
+				   TYPE="CONNECTOR"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="04/01/2017 19:12:32"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2017 19:12:21"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Upsert"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*11*0*0*0*2*P57*492 1449*LineWidth1*22*P26*529 964*FrHS1*22*P16*529 484*NPts1*62*P06*504 482*P36*467 964*ToHS1*02*P47*467 1448*ArrowEnd1*4"
+					   NAME="Connector 2"
+					   TO_STEP_NAME="Store Number of Records"
+					   UPDATED="04/01/2017 19:12:32"
+					   UPDATED_BY="SADMIN"
+					   CREATED="04/01/2017 19:12:21"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="ObjectLevelTransactions"
+				   SEQUENCE="2"
+				   TYPE="LITERAL"
+				   VALUE_SEARCH_SPECIFICATION="true"
+				   UPDATED="04/01/2017 19:10:04"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2017 19:10:04"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="SiebelMessage"
+				   PROPERTY_NAME="SiebelMessage"
+				   SEQUENCE="1"
+				   TYPE="PROPERTY"
+				   UPDATED="04/01/2017 19:10:04"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/01/2017 19:10:04"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+		</WORKFLOW_PROCESS>
+	</PROJECT>
+	<SBL_EXT_TYPE_DEF>
+		<TYPE
+		   NAME="Applet">
+			<ATTRIBUTE
+			   NAME="Responsive Flag">
+			</ATTRIBUTE>
+		</TYPE>
+		<TYPE
+		   NAME="Applet Web Template">
+			<ATTRIBUTE
+			   NAME="Ext Web Template">
+			</ATTRIBUTE>
+		</TYPE>
+		<TYPE
+		   NAME="Applet Web Template Item">
+			<ATTRIBUTE
+			   NAME="Ext Expression">
+			</ATTRIBUTE>
+			<ATTRIBUTE
+			   NAME="Group Name">
+			</ATTRIBUTE>
+			<ATTRIBUTE
+			   NAME="Html Attr">
+			</ATTRIBUTE>
+			<ATTRIBUTE
+			   NAME="Sequence">
+			</ATTRIBUTE>
+			<ATTRIBUTE
+			   NAME="Tmpl Item Holder Name">
+			</ATTRIBUTE>
+			<ATTRIBUTE
+			   NAME="Web Tmpl Name">
+			</ATTRIBUTE>
+		</TYPE>
+	</SBL_EXT_TYPE_DEF>
+</REPOSITORY>
+
+
+

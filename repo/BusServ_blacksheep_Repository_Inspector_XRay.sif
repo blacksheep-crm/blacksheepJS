@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   UPDATED="04/03/2015 10:52:46"
+   UPDATED_BY="SADMIN"
+   CREATED="04/03/2015 09:43:41"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   INACTIVE="N"
+	   LANGUAGE_LOCKED="ENU"
+	   LOCKED="Y"
+	   LOCKED_DATE="01/15/2017 09:25:41"
+	   NAME="blacksheep.js"
+	   UI_FREEZE="N"
+	   LOCKED_BY_NAME="SADMIN"
+	   UPDATED="03/16/2017 19:15:03"
+	   UPDATED_BY="SADMIN"
+	   CREATED="01/15/2017 09:25:34"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<BUSINESS_SERVICE
+		   CACHE="N"
+		   CLASS="CSSService"
+		   EXTERNAL_USE="Y"
+		   HIDDEN="N"
+		   INACTIVE="N"
+		   NAME="blacksheep Repository Inspector"
+		   OBJECT_LANGUAGE_LOCKED="ENU"
+		   OBJECT_LOCKED="Y"
+		   OBJECT_LOCKED_DATE="03/16/2017 19:12:35"
+		   SERVER_ENABLED="N"
+		   STATE_MANAGEMENT_TYPE="Stateful"
+		   WEB_SERVICE_ENABLED="N"
+		   OBJECT_LOCKED_BY_NAME="SADMIN"
+		   UPDATED="03/16/2017 19:12:41"
+		   UPDATED_BY="SADMIN"
+		   CREATED="03/16/2017 19:11:54"
+		   CREATED_BY="SADMIN">
+			<BUSINESS_SERVICE_LOCALE
+			   APPLICATION_CODE="STD"
+			   DISPLAY_NAME="blacksheep Repository Inspector"
+			   INACTIVE="N"
+			   LANGUAGE_CODE="ENU"
+			   NAME="ENU-STD"
+			   TRANSLATE="Y"
+			   UPDATED="03/16/2017 19:12:41"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/16/2017 19:11:54"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_LOCALE>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="(declarations)"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="//Your public declarations go here..."
+			   SEQUENCE="1"
+			   UPDATED="03/16/2017 19:11:54"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/16/2017 19:11:54"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="GetColumnDescription"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function GetColumnDescription(table,column){
+//retrieves comments for a column in a table
+/*GetColumnDescription()
+Helper function that takes table and column name
+Returns the column description (Comments) from the repository
+
+Author: Alexander Hansal (alex@siebelhub.com)
+DISCLAIMER: This code is for educational purposes ONLY and is provided as is with no liability whatsoever.
+DO NOT USE THIS CODE OR PARTS OF IT IN PRODUCTION ENVIRONMENTS!
+*/
+
+	//first let&apos;s instantiate the repo BO and BC for tables
+	var oBO = TheApplication().GetBusObject(&quot;Repository Table&quot;);
+	var oBC = oBO.GetBusComp(&quot;Repository Table&quot;);
+	var cBC; //the Column BC for later
+	var desc = &quot;&quot;;
+	oBC.ClearToQuery();
+	oBC.SetSearchSpec(&quot;Name&quot;,table);
+	oBC.SetSearchSpec(&quot;Repository Name&quot;,&quot;Siebel Repository&quot;);
+	oBC.ExecuteQuery(ForwardOnly);
+	if(oBC.FirstRecord()){ //we found the table, let&apos;s find the column
+		cBC = oBO.GetBusComp(&quot;Repository Column&quot;);
+		cBC.ClearToQuery();
+		cBC.ActivateField(&quot;Comments&quot;);
+		cBC.SetSearchSpec(&quot;Name&quot;,column);
+		cBC.ExecuteQuery(ForwardOnly);
+		if (cBC.FirstRecord()){  //we found the column, let&apos;s get the comments
+			desc = cBC.GetFieldValue(&quot;Comments&quot;);
+		}
+	}
+	return desc;
+}"
+			   SEQUENCE="2"
+			   UPDATED="03/16/2017 19:11:54"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/16/2017 19:11:54"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="GetTableColumns"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function GetTableColumns(Inputs ,Outputs)
+{
+/*GetTableColumns()
+Main function that takes a BC name and a child PS with field names.
+For each field we try to retrieve the table and column name.
+Handles Joins and MVFs and Calculated Fields
+Calls helper function to retrieve column comment.
+Output is a child PS with field names as property name and table.column|description as value
+
+Author: Alexander Hansal (alex@siebelhub.com)
+DISCLAIMER: This code is for educational purposes ONLY and is provided as is with no liability whatsoever.
+DO NOT USE THIS CODE OR PARTS OF IT IN PRODUCTION ENVIRONMENTS!
+*/
+//let&apos;s start with some variables...
+	var sBCName = Inputs.GetProperty(&quot;BusCompName&quot;); //read BC name from Input PS
+	var fieldPS = Inputs.GetChild(0); //get payload child PS
+	var oBO = TheApplication().GetBusObject(&quot;Repository Business Component&quot;); //get repo BC BO
+	var oMVBO = TheApplication().GetBusObject(&quot;Repository Business Component&quot;); //get repo BC BO again (oh, I love my job)
+	var oBC = oBO.GetBusComp(&quot;Repository Business Component&quot;); //get repo BC BC
+	var oMVBC = oMVBO.GetBusComp(&quot;Repository Business Component&quot;);  //and again (not clever but it works)
+	var oMVFieldBC;
+	var childPS = TheApplication().NewPropertySet();
+	var oFieldBC;
+	var oJoinBC;
+	var sBaseTable = &quot;&quot;;
+	var sColumn = &quot;&quot;;
+	var sJoin = &quot;&quot;;
+	var sMVBC = &quot;&quot;;
+	var sMVDest = &quot;&quot;;
+	var sFieldName = &quot;&quot;;
+	var ColumnDesc = &quot;&quot;;
+		
+    //first query: Get BC definition by name
+	oBC.ClearToQuery();  
+	oBC.SetSearchSpec(&quot;Name&quot;,sBCName);
+	oBC.SetSearchSpec(&quot;Repository Name&quot;,&quot;Siebel Repository&quot;);
+	oBC.ExecuteQuery(ForwardOnly);
+		
+	if (oBC.FirstRecord()) //gotcha
+	{
+		sBaseTable = oBC.GetFieldValue(&quot;Table&quot;); //get base table name
+		oFieldBC = oBO.GetBusComp(&quot;Repository Field&quot;);  //get BC to query fields
+		oFieldBC.ClearToQuery();
+		sFieldName = fieldPS.GetFirstProperty();
+		do
+		{ //for each field in Input PS, locate the field and try to reach the column definition
+		  
+			oFieldBC.SetSearchExpr(&quot;[Name] LIKE &apos;&quot; + sFieldName + &quot;&apos;&quot;);
+			oFieldBC.ExecuteQuery(ForwardOnly);
+			if (oFieldBC.FirstRecord()) //we found the field
+			{
+				sColumn = oFieldBC.GetFieldValue(&quot;Column&quot;);  //get Column prop
+				sJoin = oFieldBC.GetFieldValue(&quot;Join&quot;);  //get Join prop
+				if (sJoin != &quot;&quot;) //there is actually a join, so we have to follow it to the table
+				{
+					oJoinBC = oBO.GetBusComp(&quot;Repository Join&quot;);
+					oJoinBC.ClearToQuery();
+					oJoinBC.SetSearchSpec(&quot;Name&quot;,sJoin);
+					oJoinBC.ExecuteQuery(ForwardOnly);
+					if (oJoinBC.FirstRecord())  //ok we found the Join def
+					{
+						sJoin = oJoinBC.GetFieldValue(&quot;Table&quot;);  //get the table name from the Join def
+					}
+				}
+
+				//check if we have a SVF or MVF
+				sMVBC = oFieldBC.GetFieldValue(&quot;MV Link BusComp Name&quot;);
+				sMVDest = oFieldBC.GetFieldValue(&quot;Dest Field&quot;);
+				if (sColumn != &quot;&quot; &amp;&amp; sJoin == &quot;&quot;) //if there is a column but no join, we have a base table SVF
+				{
+					sJoin = sBaseTable; //got the table name just right
+				}
+				else if (sMVBC != &quot;&quot;) //if we have a MVF, jump to the Destination BC...
+				//if I had more time, this would be a separate function
+				{
+					sJoin = &quot;&quot;;
+					sColumn = &quot;&quot;;
+					oMVBC.ClearToQuery();
+					oMVBC.SetSearchSpec(&quot;Name&quot;,sMVBC);
+					oMVBC.SetSearchSpec(&quot;Repository Name&quot;,&quot;Siebel Repository&quot;);
+					oMVBC.ExecuteQuery(ForwardOnly);
+					if (oMVBC.FirstRecord())  //we got the MVF destination BC
+					{
+						oMVFieldBC = oMVBO.GetBusComp(&quot;Repository Field&quot;);
+						oMVFieldBC.ClearToQuery();
+						oMVFieldBC.SetSearchSpec(&quot;Name&quot;,sMVDest);
+						oMVFieldBC.ExecuteQuery(ForwardOnly);
+						if (oMVFieldBC.FirstRecord())  //we found the destination field
+						{
+							sColumn = oMVFieldBC.GetFieldValue(&quot;Column&quot;);  //get column
+							sJoin = oMVFieldBC.GetFieldValue(&quot;Join&quot;);      //get table
+							if (sColumn != &quot;&quot; &amp;&amp; sJoin == &quot;&quot;)
+							{
+								sJoin = oMVBC.GetFieldValue(&quot;Table&quot;);
+							}
+						}
+					}
+				}
+			}
+			
+			//do we have table and column?
+			if (sJoin != &quot;&quot; &amp;&amp; sColumn != &quot;&quot;){ //yes!
+				ColumnDesc = GetColumnDescription(sJoin,sColumn); //let&apos;s get the Column&apos;s description
+				childPS.SetProperty(sFieldName, sJoin + &quot;.&quot; + sColumn + &quot;|&quot; + ColumnDesc);  //produce response string
+			}
+			else{ //no? must be a calculated field
+				childPS.SetProperty(sFieldName, &quot;CALCULATED FIELD&quot;);  //set response
+			}
+			sFieldName = fieldPS.GetNextProperty(); //get next field from Input PS
+			sJoin = &quot;&quot;;  //reset 
+			sColumn = &quot;&quot;;  //reset
+		}while (sFieldName != &quot;&quot;); //end of loop
+		
+		//Write to Output PS
+		Outputs.SetProperty(&quot;BusCompName&quot;,sBCName);
+		Outputs.SetProperty(&quot;BaseTable&quot;,sBaseTable);
+		Outputs.AddChild(childPS);
+	}
+	else
+	{
+		throw(&quot;No data.&quot;);
+	}
+}"
+			   SEQUENCE="3"
+			   UPDATED="03/16/2017 19:11:54"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/16/2017 19:11:54"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="Service_PreInvokeMethod"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function Service_PreInvokeMethod (MethodName, Inputs, Outputs)
+{
+	try
+	{
+		switch(MethodName)
+		{
+			case &quot;GetTableColumns&quot;: GetTableColumns(Inputs,Outputs);
+			                        break;
+			default:                break;
+		}
+	}
+	catch(e)
+	{
+		Outputs.SetProperty(&quot;Error&quot;,e.toString());
+	}
+	return (CancelOperation);
+}"
+			   SEQUENCE="4"
+			   UPDATED="03/16/2017 19:11:54"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/16/2017 19:11:54"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+		</BUSINESS_SERVICE>
+	</PROJECT>
+</REPOSITORY>
+
+
+

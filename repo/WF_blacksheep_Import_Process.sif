@@ -1,0 +1,754 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   UPDATED="04/03/2015 10:52:46"
+   UPDATED_BY="SADMIN"
+   CREATED="04/03/2015 09:43:41"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   INACTIVE="N"
+	   LANGUAGE_LOCKED="ENU"
+	   LOCKED="Y"
+	   LOCKED_DATE="01/15/2017 09:25:41"
+	   NAME="blacksheep.js"
+	   UI_FREEZE="N"
+	   LOCKED_BY_NAME="SADMIN"
+	   UPDATED="04/04/2017 16:29:33"
+	   UPDATED_BY="SADMIN"
+	   CREATED="01/15/2017 09:25:34"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<WORKFLOW_PROCESS
+		   EDIT="N"
+		   INACTIVE="N"
+		   NAME="blacksheep Import Process: 13"
+		   OBJECT_LANGUAGE_LOCKED="ENU"
+		   OBJECT_LOCKED="Y"
+		   OBJECT_LOCKED_DATE="04/04/2017 16:09:35"
+		   PASS_BY_REF_HIERARCHY_ARGUMENT="N"
+		   PROCESS_NAME="blacksheep Import Process"
+		   REPLICATION_LEVEL="None"
+		   RUNNABLE="N"
+		   STATE_MANAGEMENT_TYPE="STATEFUL"
+		   STATUS="COMPLETED"
+		   VERSION="13"
+		   WEB_SERVICE_ENABLED="N"
+		   WORKFLOW_MODE="Service Flow"
+		   OBJECT_LOCKED_BY_NAME="SADMIN"
+		   UPDATED="04/04/2017 16:29:31"
+		   UPDATED_BY="SADMIN"
+		   CREATED="04/04/2017 16:09:34"
+		   CREATED_BY="SADMIN">
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="PROPSET_CHILD"
+			   INOUT="INOUT"
+			   NAME="BadRecords"
+			   UPDATED="04/04/2017 16:09:35"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:35"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   DEFAULT_STRING="false"
+			   INOUT="INOUT"
+			   NAME="DeleteCSVFile"
+			   UPDATED="04/04/2017 16:09:35"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:35"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Error Code"
+			   UPDATED="04/04/2017 16:09:35"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:35"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Error Message"
+			   UPDATED="04/04/2017 16:09:35"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:35"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   DEFAULT_STRING="C:\Users\sadmin\Desktop\temp\contacts_base.csv"
+			   INOUT="INOUT"
+			   NAME="FileName"
+			   UPDATED="04/04/2017 16:24:39"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:35"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="FileType"
+			   UPDATED="04/04/2017 16:09:35"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:35"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Object Id"
+			   UPDATED="04/04/2017 16:09:35"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:35"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Process Instance Id"
+			   UPDATED="04/04/2017 16:09:35"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:35"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   DEFAULT_STRING="true"
+			   INOUT="INOUT"
+			   NAME="RecordLevelTransactions"
+			   UPDATED="04/04/2017 16:20:39"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:35"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="NUMBER"
+			   INOUT="INOUT"
+			   NAME="RecordsFromCSV"
+			   UPDATED="04/04/2017 16:09:35"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:35"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   DEFAULT_STRING="true"
+			   INOUT="INOUT"
+			   NAME="ReturnStatusObject"
+			   UPDATED="04/04/2017 16:09:35"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:35"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="VARCHAR"
+			   INOUT="INOUT"
+			   NAME="Siebel Operation Object Id"
+			   UPDATED="04/04/2017 16:09:35"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:35"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="PROPSET_CHILD"
+			   INOUT="INOUT"
+			   NAME="SiebelMessage"
+			   UPDATED="04/04/2017 16:09:35"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:35"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_PROCESS_PROP
+			   ACCESS_MODE="RW"
+			   CORRELATOR_FLAG="N"
+			   DATA_TYPE="PROPSET_CHILD"
+			   INOUT="INOUT"
+			   NAME="StatusObject"
+			   UPDATED="04/04/2017 16:09:35"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:35"
+			   CREATED_BY="SADMIN">
+			</WF_PROCESS_PROP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r13*768 24 864 729*FillBgClr8*167641088*ArrowEnd1*1"
+			   NAME="End"
+			   TYPE="END"
+			   UPDATED="04/04/2017 16:10:23"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:34"
+			   CREATED_BY="SADMIN">
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   BUSINESS_SERVICE_METHOD="CsvToPropSet"
+			   BUSINESS_SERVICE_NAME="Read CSV File"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r13*252 24 348 729*FillBgClr8*134217218*ArrowEnd1*1"
+			   NAME="Read CSV"
+			   TYPE="TASK"
+			   UPDATED="04/04/2017 16:09:34"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:34"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P27*360 1444*FrHS1*22*P16*360 484*NPts1*42*P06*348 482*P37*372 1444*ToHS1*08*ArrowEnd1*4"
+				   NAME="Connector 1"
+				   TO_STEP_NAME="Set Profile Attribute 2"
+				   TYPE="CONNECTOR"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="04/04/2017 16:09:34"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:34"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Read CSV"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P27*360 1444*FrHS1*22*P16*360 484*NPts1*42*P06*348 482*P37*372 1444*ToHS1*08*ArrowEnd1*4"
+					   NAME="Connector 1"
+					   TO_STEP_NAME="Set Profile Attribute 2"
+					   UPDATED="04/04/2017 16:09:34"
+					   UPDATED_BY="SADMIN"
+					   CREATED="04/04/2017 16:09:34"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*8*0*0*0*9*LineWidth1*24*FrHS1*32*P17*300 3364*NPts1*22*P06*300 724*ToHS1*19*LineColor3*2558*ArrowEnd1*4"
+				   NAME="Error Exception 0"
+				   TO_STEP_NAME="Stop Read CSV"
+				   TYPE="ERROR_EXC"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="04/04/2017 16:09:34"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:34"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Read CSV"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*8*0*0*0*9*LineWidth1*24*FrHS1*32*P17*300 3364*NPts1*22*P06*300 724*ToHS1*19*LineColor3*2558*ArrowEnd1*4"
+					   NAME="Error Exception 0"
+					   TO_STEP_NAME="Stop Read CSV"
+					   UPDATED="04/04/2017 16:09:34"
+					   UPDATED_BY="SADMIN"
+					   CREATED="04/04/2017 16:09:34"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="CsvFileName"
+				   PROPERTY_NAME="FileName"
+				   SEQUENCE="7"
+				   TYPE="PROPERTY"
+				   UPDATED="04/04/2017 16:09:34"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:34"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="DeleteFile"
+				   PROPERTY_NAME="DeleteCSVFile"
+				   SEQUENCE="8"
+				   TYPE="PROPERTY"
+				   UPDATED="04/04/2017 16:09:34"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:34"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="O"
+				   NAME="O:Read CSV100"
+				   OUTPUT_ARG="SiebelMessage"
+				   PROPERTY_NAME="SiebelMessage"
+				   SEQUENCE="10"
+				   TYPE="ARGUMENT"
+				   UPDATED="04/04/2017 16:09:34"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:34"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="O"
+				   NAME="O:Read CSV110"
+				   OUTPUT_ARG="SiebelMessageError"
+				   PROPERTY_NAME="BadRecords"
+				   SEQUENCE="11"
+				   TYPE="ARGUMENT"
+				   UPDATED="04/04/2017 16:09:34"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:34"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="O"
+				   NAME="O:Read CSV120"
+				   OUTPUT_ARG="NumRecords"
+				   PROPERTY_NAME="RecordsFromCSV"
+				   SEQUENCE="12"
+				   TYPE="ARGUMENT"
+				   UPDATED="04/04/2017 16:09:34"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:34"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   BUSINESS_SERVICE_METHOD="SetProfileAttr"
+			   BUSINESS_SERVICE_NAME="SessionAccessService"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r15*636 120 732 1689*FillBgClr8*134217218*ArrowEnd1*1"
+			   NAME="Save Status Object"
+			   TYPE="TASK"
+			   UPDATED="04/04/2017 16:21:03"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:44"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P26*750 484*FrHS1*22*P17*750 1444*NPts1*42*P07*732 1442*P36*768 484*ToHS1*08*ArrowEnd1*4"
+				   NAME="Connector 4"
+				   TO_STEP_NAME="End"
+				   TYPE="CONNECTOR"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="04/04/2017 16:21:03"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:11:17"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Save Status Object"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P26*750 484*FrHS1*22*P17*750 1444*NPts1*42*P07*732 1442*P36*768 484*ToHS1*08*ArrowEnd1*4"
+					   NAME="Connector 4"
+					   TO_STEP_NAME="End"
+					   UPDATED="04/04/2017 16:21:03"
+					   UPDATED_BY="SADMIN"
+					   CREATED="04/04/2017 16:11:17"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="Name"
+				   SEQUENCE="1"
+				   TYPE="LITERAL"
+				   VALUE_SEARCH_SPECIFICATION="blacksheep_IMPORT_SO"
+				   UPDATED="04/04/2017 16:10:44"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:10:27"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="Value"
+				   PROPERTY_NAME="StatusObject"
+				   SEQUENCE="2"
+				   TYPE="PROPERTY"
+				   UPDATED="04/04/2017 16:10:44"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:10:44"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   BUSINESS_SERVICE_METHOD="SetProfileAttr"
+			   BUSINESS_SERVICE_NAME="SessionAccessService"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r15*132 120 228 1689*FillBgClr8*134217218*ArrowEnd1*1"
+			   NAME="Set Profile Attribute 1"
+			   TYPE="TASK"
+			   UPDATED="04/04/2017 16:09:34"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:34"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P26*240 484*FrHS1*22*P17*240 1444*NPts1*42*P07*228 1442*P36*252 484*ToHS1*08*ArrowEnd1*4"
+				   NAME="Connector 0"
+				   TO_STEP_NAME="Read CSV"
+				   TYPE="CONNECTOR"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="04/04/2017 16:09:34"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:34"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Set Profile Attribute 1"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P26*240 484*FrHS1*22*P17*240 1444*NPts1*42*P07*228 1442*P36*252 484*ToHS1*08*ArrowEnd1*4"
+					   NAME="Connector 0"
+					   TO_STEP_NAME="Read CSV"
+					   UPDATED="04/04/2017 16:09:34"
+					   UPDATED_BY="SADMIN"
+					   CREATED="04/04/2017 16:09:34"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="Name"
+				   SEQUENCE="1"
+				   TYPE="LITERAL"
+				   VALUE_SEARCH_SPECIFICATION="blacksheep_IMPORT_1"
+				   UPDATED="04/04/2017 16:09:34"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:34"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="Value"
+				   SEQUENCE="2"
+				   TYPE="EXPRESSION"
+				   VALUE_SEARCH_SPECIFICATION="&quot;{&apos;Process Instance Id&apos;:&apos;&quot; + [&amp;Process Instance Id] + &quot;&apos;,&apos;File Path&apos;:&apos;&quot; + [&amp;FileName] + &quot;&apos;,&apos;File Type&apos;:&apos;&quot; + [&amp;FileType] + &quot;&apos;}&quot;"
+				   UPDATED="04/04/2017 16:09:34"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:34"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   BUSINESS_SERVICE_METHOD="SetProfileAttr"
+			   BUSINESS_SERVICE_NAME="SessionAccessService"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r15*372 120 468 1689*FillBgClr8*134217218*ArrowEnd1*1"
+			   NAME="Set Profile Attribute 2"
+			   TYPE="TASK"
+			   UPDATED="04/04/2017 16:09:34"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:34"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P26*492 484*FrHS1*22*P17*492 1444*NPts1*42*P07*468 1442*P36*516 484*ToHS1*08*ArrowEnd1*4"
+				   NAME="Connector 5"
+				   TO_STEP_NAME="Upsert"
+				   TYPE="CONNECTOR"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="04/04/2017 16:09:34"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:34"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Set Profile Attribute 2"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P26*492 484*FrHS1*22*P17*492 1444*NPts1*42*P07*468 1442*P36*516 484*ToHS1*08*ArrowEnd1*4"
+					   NAME="Connector 5"
+					   TO_STEP_NAME="Upsert"
+					   UPDATED="04/04/2017 16:09:34"
+					   UPDATED_BY="SADMIN"
+					   CREATED="04/04/2017 16:09:34"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="Name"
+				   SEQUENCE="1"
+				   TYPE="LITERAL"
+				   VALUE_SEARCH_SPECIFICATION="blacksheep_IMPORT_2"
+				   UPDATED="04/04/2017 16:09:34"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:34"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="Value"
+				   SEQUENCE="2"
+				   TYPE="EXPRESSION"
+				   VALUE_SEARCH_SPECIFICATION="&quot;{&apos;RecordCountCSV&apos;:&apos;&quot; + ToChar([&amp;RecordsFromCSV]) + &quot;&apos;}&quot;"
+				   UPDATED="04/04/2017 16:09:34"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:34"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r12*60 24 156 729*FillBgClr8*167641088*ArrowEnd1*1"
+			   NAME="Start"
+			   TYPE="START"
+			   UPDATED="04/04/2017 16:09:34"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:34"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*11*0*0*0*2*P57*132 1449*LineWidth1*22*P26*181 964*FrHS1*22*P16*181 484*NPts1*62*P06*144 482*P36*107 964*ToHS1*02*P47*107 1448*ArrowEnd1*4"
+				   NAME="Connector 3"
+				   TO_STEP_NAME="Set Profile Attribute 1"
+				   TYPE="DEFAULT"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="04/04/2017 16:09:34"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:34"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Start"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*11*0*0*0*2*P57*132 1449*LineWidth1*22*P26*181 964*FrHS1*22*P16*181 484*NPts1*62*P06*144 482*P36*107 964*ToHS1*02*P47*107 1448*ArrowEnd1*4"
+					   NAME="Connector 3"
+					   TO_STEP_NAME="Set Profile Attribute 1"
+					   UPDATED="04/04/2017 16:09:34"
+					   UPDATED_BY="SADMIN"
+					   CREATED="04/04/2017 16:09:34"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   EDIT="Y"
+			   ERROR_CODE="WF_ERR_CUSTOM_1"
+			   ERROR_MESSAGE="%1"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*4*0*0*0*1*r15*252 336 348 3849*FillBgClr8*100794369*LineColor3*2558*ArrowEnd1*1"
+			   NAME="Stop Read CSV"
+			   TYPE="ABORT"
+			   UPDATED="04/04/2017 16:09:34"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:34"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="%1"
+				   SEQUENCE="1"
+				   TYPE="EXPRESSION"
+				   VALUE_SEARCH_SPECIFICATION="[&amp;Error Message]"
+				   UPDATED="04/04/2017 16:09:35"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:35"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   EDIT="Y"
+			   ERROR_CODE="WF_ERR_CUSTOM_1"
+			   ERROR_MESSAGE="%1"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*4*0*0*0*1*r15*516 336 612 3849*FillBgClr8*100794369*LineColor3*2558*ArrowEnd1*1"
+			   NAME="Stop Upsert"
+			   TYPE="ABORT"
+			   UPDATED="04/04/2017 16:09:35"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:35"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="%1"
+				   SEQUENCE="1"
+				   TYPE="EXPRESSION"
+				   VALUE_SEARCH_SPECIFICATION="[&amp;Error Message]"
+				   UPDATED="04/04/2017 16:09:35"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:35"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+			<WF_STEP
+			   ALLOW_RETRY_FLAG="N"
+			   BUSINESS_SERVICE_METHOD="Upsert"
+			   BUSINESS_SERVICE_NAME="EAI Siebel Adapter"
+			   EDIT="Y"
+			   EVALUATE_ALL="Y"
+			   INACTIVE="N"
+			   LAYOUT="@0*0*3*0*0*0*1*r13*516 24 612 729*FillBgClr8*134217218*ArrowEnd1*1"
+			   NAME="Upsert"
+			   TYPE="TASK"
+			   UPDATED="04/04/2017 16:21:03"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/04/2017 16:09:35"
+			   CREATED_BY="SADMIN">
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P27*624 1444*FrHS1*22*P16*624 484*NPts1*42*P06*612 482*P37*636 1444*ToHS1*08*ArrowEnd1*4"
+				   NAME="Connector 2"
+				   TO_STEP_NAME="Save Status Object"
+				   TYPE="CONNECTOR"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="04/04/2017 16:21:03"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:11:11"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Upsert"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*9*0*0*0*9*LineWidth1*22*P27*624 1444*FrHS1*22*P16*624 484*NPts1*42*P06*612 482*P37*636 1444*ToHS1*08*ArrowEnd1*4"
+					   NAME="Connector 2"
+					   TO_STEP_NAME="Save Status Object"
+					   UPDATED="04/04/2017 16:21:03"
+					   UPDATED_BY="SADMIN"
+					   CREATED="04/04/2017 16:11:11"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_BRANCH
+				   EDIT="Y"
+				   EVENT_CANCEL_FLAG="N"
+				   EVENT_VISIBILITY="Enterprise"
+				   INACTIVE="N"
+				   LAYOUT="@0*0*8*0*0*0*9*LineWidth1*24*FrHS1*32*P17*564 3364*NPts1*22*P06*564 724*ToHS1*19*LineColor3*2558*ArrowEnd1*4"
+				   NAME="Error Exception 1"
+				   TO_STEP_NAME="Stop Upsert"
+				   TYPE="ERROR_EXC"
+				   USER_EVENT_TIMEOUT="0"
+				   UPDATED="04/04/2017 16:09:35"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:35"
+				   CREATED_BY="SADMIN">
+					<WF_BRANCH_CONNECTOR
+					   FROM_STEP_NAME="Upsert"
+					   INACTIVE="N"
+					   LAYOUT="@0*0*8*0*0*0*9*LineWidth1*24*FrHS1*32*P17*564 3364*NPts1*22*P06*564 724*ToHS1*19*LineColor3*2558*ArrowEnd1*4"
+					   NAME="Error Exception 1"
+					   TO_STEP_NAME="Stop Upsert"
+					   UPDATED="04/04/2017 16:09:35"
+					   UPDATED_BY="SADMIN"
+					   CREATED="04/04/2017 16:09:35"
+					   CREATED_BY="SADMIN">
+					</WF_BRANCH_CONNECTOR>
+				</WF_STEP_BRANCH>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="O"
+				   NAME="O:Upsert50"
+				   OUTPUT_ARG="SiebelMessage"
+				   PROPERTY_NAME="StatusObject"
+				   SEQUENCE="5"
+				   TYPE="ARGUMENT"
+				   UPDATED="04/04/2017 16:09:35"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:35"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="ObjectLevelTransactions"
+				   PROPERTY_NAME="RecordLevelTransactions"
+				   SEQUENCE="2"
+				   TYPE="PROPERTY"
+				   UPDATED="04/04/2017 16:09:35"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:35"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="SiebelMessage"
+				   PROPERTY_NAME="SiebelMessage"
+				   SEQUENCE="1"
+				   TYPE="PROPERTY"
+				   UPDATED="04/04/2017 16:09:35"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:35"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+				<WF_STEP_I_O_ARGUMENT
+				   INACTIVE="N"
+				   INPUT_FLAG="I"
+				   NAME="StatusObject"
+				   PROPERTY_NAME="ReturnStatusObject"
+				   SEQUENCE="4"
+				   TYPE="PROPERTY"
+				   UPDATED="04/04/2017 16:09:35"
+				   UPDATED_BY="SADMIN"
+				   CREATED="04/04/2017 16:09:35"
+				   CREATED_BY="SADMIN">
+				</WF_STEP_I_O_ARGUMENT>
+			</WF_STEP>
+		</WORKFLOW_PROCESS>
+	</PROJECT>
+</REPOSITORY>
+
+
+

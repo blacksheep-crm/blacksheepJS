@@ -1,0 +1,608 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<REPOSITORY
+   NAME="Siebel Repository"
+   UPDATED="04/03/2015 10:52:46"
+   UPDATED_BY="SADMIN"
+   CREATED="04/03/2015 09:43:41"
+   CREATED_BY="SADMIN"
+   FIO_PLACEHOLDER_FIO="TRUE">
+	<PROJECT
+	   ALLOW_OBJECT_LOCKING="Y"
+	   INACTIVE="N"
+	   LANGUAGE_LOCKED="ENU"
+	   LOCKED="Y"
+	   LOCKED_DATE="01/15/2017 09:25:41"
+	   NAME="blacksheep.js"
+	   UI_FREEZE="N"
+	   LOCKED_BY_NAME="SADMIN"
+	   UPDATED="06/03/2017 12:12:41"
+	   UPDATED_BY="SADMIN"
+	   CREATED="01/15/2017 09:25:34"
+	   CREATED_BY="SADMIN"
+	   FIO_PLACEHOLDER_FIO="TRUE">
+		<BUSINESS_SERVICE
+		   CACHE="N"
+		   CLASS="CSSService"
+		   EXTERNAL_USE="Y"
+		   HIDDEN="N"
+		   INACTIVE="N"
+		   NAME="blacksheep Data Retriever"
+		   OBJECT_LANGUAGE_LOCKED="ENU"
+		   OBJECT_LOCKED="Y"
+		   OBJECT_LOCKED_DATE="03/16/2017 19:13:15"
+		   SERVER_ENABLED="N"
+		   STATE_MANAGEMENT_TYPE="Stateful"
+		   WEB_SERVICE_ENABLED="N"
+		   OBJECT_LOCKED_BY_NAME="SADMIN"
+		   UPDATED="06/03/2017 12:05:45"
+		   UPDATED_BY="SADMIN"
+		   CREATED="03/16/2017 19:13:01"
+		   CREATED_BY="SADMIN">
+			<BUSINESS_SERVICE_LOCALE
+			   APPLICATION_CODE="STD"
+			   DISPLAY_NAME="blacksheep Data Retriever"
+			   INACTIVE="N"
+			   LANGUAGE_CODE="ENU"
+			   NAME="ENU-STD"
+			   TRANSLATE="Y"
+			   UPDATED="03/16/2017 19:13:15"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/16/2017 19:13:02"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_LOCALE>
+			<BUSINESS_SERVICE_METHOD
+			   HIDDEN="N"
+			   INACTIVE="N"
+			   NAME="GetData"
+			   UPDATED="03/16/2017 19:13:02"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/16/2017 19:13:02"
+			   CREATED_BY="SADMIN">
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Business Component"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="03/16/2017 19:13:02"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/16/2017 19:13:02"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Business Object"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="03/16/2017 19:13:02"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/16/2017 19:13:02"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="Hierarchy"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Output Fields"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Hierarchy"
+				   TYPE="Input"
+				   UPDATED="03/16/2017 19:13:02"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/16/2017 19:13:02"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="Hierarchy"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Record Set"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Hierarchy"
+				   TYPE="Output"
+				   UPDATED="03/16/2017 19:13:02"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/16/2017 19:13:02"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Search Specification"
+				   OPTIONAL="N"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="03/16/2017 19:13:02"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/16/2017 19:13:02"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_ARG
+				   DATA_TYPE="String"
+				   HIDDEN="N"
+				   INACTIVE="N"
+				   NAME="Sort Specification"
+				   OPTIONAL="Y"
+				   STORAGE_TYPE="Property"
+				   TYPE="Input"
+				   UPDATED="03/16/2017 19:13:02"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/16/2017 19:13:02"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_ARG>
+				<BUSINESS_SERVICE_METHOD_LOCALE
+				   APPLICATION_CODE="STD"
+				   DISPLAY_NAME="Get Data"
+				   INACTIVE="N"
+				   LANGUAGE_CODE="ENU"
+				   NAME="ENU-STD"
+				   TRANSLATE="Y"
+				   UPDATED="03/16/2017 19:13:02"
+				   UPDATED_BY="SADMIN"
+				   CREATED="03/16/2017 19:13:02"
+				   CREATED_BY="SADMIN">
+				</BUSINESS_SERVICE_METHOD_LOCALE>
+			</BUSINESS_SERVICE_METHOD>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="(declarations)"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="//Your public declarations go here..."
+			   SEQUENCE="1"
+			   UPDATED="05/24/2017 10:33:37"
+			   UPDATED_BY="SADMIN"
+			   CREATED="05/24/2017 10:33:37"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="Associate"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function Associate(Inputs,Outputs){
+	var bc : String = Inputs.GetProperty(&quot;Business Component&quot;);
+	var field : String = Inputs.GetProperty(&quot;Field&quot;);
+	var rowid : String = Inputs.GetProperty(&quot;rowid&quot;);
+	var aBO : BusObject = TheApplication().ActiveBusObject();
+	var aBC : BusComp = aBO.GetBusComp(bc);
+	var mBC : BusComp = aBC.GetMVGBusComp(field);
+	var asBC : BusComp = mBC.GetAssocBusComp();
+	asBC.ClearToQuery();
+	asBC.SetSearchSpec(&quot;Id&quot;,rowid);
+	asBC.ExecuteQuery(ForwardOnly);
+	if (asBC.FirstRecord()){
+		asBC.Associate(NewAfter);
+	}
+	//aBC.WriteRecord();
+	mBC = null;
+	asBC = null;
+	aBC = null;
+	aBO = null;
+	rowid = null;
+	field = null;
+	bc = null;
+}"
+			   SEQUENCE="2"
+			   UPDATED="05/24/2017 11:10:54"
+			   UPDATED_BY="SADMIN"
+			   CREATED="05/24/2017 10:33:35"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="GetData"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function GetData(Inputs, Outputs){
+	var oBO : BusObject;
+	var aBO : BusObject = TheApplication().ActiveBusObject();
+	var oBC : BusComp;
+	var aBC : BusComp;
+	var cPS : PropertySet = TheApplication().NewPropertySet();
+	var oPS : PropertySet = TheApplication().NewPropertySet();
+	var field : String;
+	var pr_row_id : String = Inputs.GetProperty(&quot;Primary Row Id&quot;);
+	var pr_BCName : String = Inputs.GetProperty(&quot;Primary Business Component&quot;);
+	var activeBO : Boolean = false;
+	var sBCName : String = Inputs.GetProperty(&quot;Business Component&quot;);
+	var counter : Number = 0;
+	var sSearchSpec : String = Inputs.GetProperty(&quot;Search Specification&quot;);
+	var sSortSpec : String = Inputs.GetProperty(&quot;Sort Specification&quot;);
+	var sViewMode : String = Inputs.GetProperty(&quot;View Mode&quot;);
+
+	//set view mode to 0 (&quot;My&quot;) the hard way to avoid data leaks
+	//possibly use Responsibility or System Preference at a later stage to allow more access for privileged users
+
+	sViewMode = &quot;0&quot;;
+	
+	var fields : PropertySet = Inputs.GetChild(0);
+	if (Inputs.GetProperty(&quot;Business Object&quot;) != &quot;&quot;){
+		oBO = TheApplication().GetBusObject(Inputs.GetProperty(&quot;Business Object&quot;));
+	}
+	else{
+		oBO = TheApplication().ActiveBusObject();
+		activeBO = true;
+	}
+	if (oBO)
+	{
+		if (sBCName != &quot;&quot;){
+			oBC = oBO.GetBusComp(sBCName);
+		}
+		else{
+			throw(&quot;Invalid Business Component reference&quot;);
+		}
+	}
+	else{
+		throw(&quot;Failed to initialize Business Object&quot;);
+	}
+	if (sSearchSpec == &quot;&quot;){
+		aBC = aBO.GetBusComp(sBCName);
+		sSearchSpec = aBC.GetSearchExpr();
+	}
+	if (sSortSpec == &quot;&quot;){
+		aBC = aBO.GetBusComp(sBCName);
+		sSortSpec = aBC.GetSortSpec();
+	}
+	if (sViewMode == &quot;&quot;){
+		aBC = aBO.GetBusComp(sBCName);
+		sViewMode = ToInt32(aBC.GetViewMode());
+	}
+	if (pr_BCName != &quot;&quot; &amp;&amp; pr_row_id != &quot;&quot;){
+	   if(activeBO == true){
+	//query parent BC in non-UI mode and then fetch child BC
+		oBO = TheApplication().GetBusObject(TheApplication().ActiveBusObject().Name());
+		}
+		aBC = oBO.GetBusComp(pr_BCName);
+		aBC.ClearToQuery();
+		aBC.SetSearchSpec(&quot;Id&quot;,pr_row_id);
+		aBC.SetViewMode(sViewMode);
+		aBC.ExecuteQuery(ForwardOnly);
+		oBC = oBO.GetBusComp(sBCName);
+		
+	}
+	if (oBC){
+		oBC.ClearToQuery();
+		oBC.ActivateMultipleFields(fields);
+		oBC.SetSearchExpr(sSearchSpec);
+		oBC.SetSortSpec(sSortSpec);
+		oBC.SetViewMode(sViewMode);
+		oBC.ExecuteQuery(ForwardOnly);
+		if (oBC.FirstRecord()){
+			do{
+				counter++;
+				field = fields.GetFirstProperty();
+				for (var i = 0; i &lt; fields.GetPropertyCount();i++){
+					cPS.SetProperty(field,oBC.GetFieldValue(field));
+					field = fields.GetNextProperty()
+				}
+				cPS.SetType(sBCName + &quot;_&quot; + ToString(counter));
+				Outputs.AddChild(cPS);
+				cPS = TheApplication().NewPropertySet();
+			}while (oBC.NextRecord());
+		}
+	}
+	else{
+		throw(&quot;Failed to initialize Business Component&quot;);
+	}
+	
+	Outputs.SetProperty(&quot;Record Count&quot;, ToString(counter));
+	Outputs.SetProperty(&quot;Business Object&quot;,oBO.Name());
+	Outputs.SetProperty(&quot;Business Component&quot;,oBC.Name());
+	Outputs.SetProperty(&quot;Search Specification&quot;,sSearchSpec);
+	Outputs.SetProperty(&quot;Sort Specification&quot;,sSortSpec);
+	Outputs.SetProperty(&quot;View Mode&quot;,sViewMode);
+	Outputs.SetType(&quot;Record Set&quot;);
+}"
+			   SEQUENCE="3"
+			   UPDATED="06/03/2017 11:15:54"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/16/2017 19:13:02"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="GetPickInfo"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function GetPickInfo (Inputs, Outputs){
+	var fname : String = Inputs.GetProperty(&quot;Field&quot;);
+	var inputBCname : String = Inputs.GetProperty(&quot;Business Component&quot;);
+	var infilter : String = Inputs.GetProperty(&quot;Filter&quot;);
+	//var queryBCname : String;
+	//var searchexpr : String;
+	var type : String;
+	var queryfield : String;
+	var BO : String = &quot;Repository Details&quot;;
+	//var pickBC : String;
+
+	//Get Field Properties
+	var fprops : PropertySet = TheApplication().NewPropertySet();
+	fprops.SetProperty(&quot;Name&quot;,&quot;&quot;);
+	fprops.SetProperty(&quot;Parent Name&quot;,&quot;&quot;);
+	fprops.SetProperty(&quot;Multi Value Link&quot;,&quot;&quot;);
+	fprops.SetProperty(&quot;Multi Valued&quot;,&quot;&quot;);
+	fprops.SetProperty(&quot;Repository Name&quot;,&quot;&quot;);
+	fprops.SetProperty(&quot;PickList&quot;,&quot;&quot;);
+	fprops.SetProperty(&quot;PickList Business Component&quot;,&quot;&quot;);
+	fprops.SetProperty(&quot;Dest Field&quot;,&quot;&quot;);
+	fprops.SetProperty(&quot;Join&quot;,&quot;&quot;);
+	fprops.SetProperty(&quot;Column&quot;,&quot;&quot;);
+	
+	var oBO : BusObject = TheApplication().GetBusObject(BO);
+	var oBCF : BusComp = oBO.GetBusComp(&quot;Repository Field&quot;);
+	var oBCP : BusComp;
+	oBCF.ClearToQuery();
+	oBCF.SetSearchExpr(&quot;[Name]=&apos;&quot; + fname + &quot;&apos; AND [Repository Name]=&apos;Siebel Repository&apos; AND [Inactive] &lt;&gt; &apos;Y&apos; AND [Parent Name]=&apos;&quot; + inputBCname + &quot;&apos;&quot;);
+	oBCF.ActivateMultipleFields(fprops);
+	oBCF.ExecuteQuery(ForwardOnly);
+	if (oBCF.FirstRecord()){
+		if (oBCF.GetFieldValue(&quot;PickList&quot;) != &quot;&quot;){
+			type = &quot;Pick&quot;;
+			oBCP = oBO.GetBusComp(&quot;Repository Pick Map&quot;);
+			oBCP.ClearToQuery();
+			oBCP.SetSearchExpr(&quot;[Field]=&apos;&quot; + fname + &quot;&apos; AND [Repository Name]=&apos;Siebel Repository&apos; AND [Inactive] &lt;&gt; &apos;Y&apos; AND [Parent Name]=&apos;&quot; + fname  + &quot;&apos; AND [GParent Name]=&apos;&quot; + inputBCname + &quot;&apos;&quot;);
+			oBCP.ActivateField(&quot;Pick List Field&quot;);
+			oBCP.ExecuteQuery(ForwardOnly);
+			if (oBCP.FirstRecord()){
+				queryfield = oBCP.GetFieldValue(&quot;Pick List Field&quot;);
+			}
+			else{
+				throw(&quot;Error in blacksheep Data Retriver/GetPickInfo: Could not find Repository definition of Join &apos;&quot; + join + &quot;&apos;.&quot;);
+			}
+		}
+		else if (oBCF.GetFieldValue(&quot;Multi Valued&quot;) == &quot;Y&quot;){
+			type = &quot;Mvg&quot;;
+			queryfield = oBCF.GetFieldValue(&quot;Dest Field&quot;);
+		}
+
+	
+		 
+	}
+	else{
+		throw(&quot;Error in blacksheep Data Retriver/GetPickInfo: Could not find Repository definition of Field &apos;&quot; + fname + &quot;&apos;.&quot;);	
+	}
+	//Outputs.SetProperty(&quot;searchexpr&quot;,searchexpr);
+	Outputs.SetProperty(&quot;queryfield&quot;,queryfield);
+	
+	//clean up
+	oBCF = null;
+	oBCP = null;
+	oBO = null;
+	fprops = null;
+	BO = null;
+	queryfield = null;
+	type = null;
+	//searchexpr = null;
+	infilter = null;
+	inputBCname = null;
+	fname = null;
+	
+
+}"
+			   SEQUENCE="4"
+			   UPDATED="05/24/2017 10:33:37"
+			   UPDATED_BY="SADMIN"
+			   CREATED="05/20/2017 10:53:58"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="GetPickValues"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function GetPickValues(Inputs,Outputs){
+	var aBO : BusObject = TheApplication().ActiveBusObject();
+	var BOName : String = aBO.Name();
+	var tempBC = aBO.GetBusComp(Inputs.GetProperty(&quot;Business Component&quot;));
+	var ftype : String = Inputs.GetProperty(&quot;Field Type&quot;);
+	var rowid = tempBC.GetFieldValue(&quot;Id&quot;);
+	var newid = Inputs.GetProperty(&quot;NewId&quot;);
+	var op = Inputs.GetProperty(&quot;Operator&quot;);
+	var ok;
+
+	var oBO : BusObject = TheApplication().GetBusObject(BOName);
+	var oBC : BusComp = oBO.GetBusComp(Inputs.GetProperty(&quot;Business Component&quot;));
+	if (newid != &quot;&quot;){
+		rowid = newid;
+		oBC = aBO.GetBusComp(Inputs.GetProperty(&quot;Business Component&quot;));
+	}
+	if (newid == &quot;&quot;){
+		oBC.ClearToQuery();
+		//oBC.SetSearchSpec(&quot;Id&quot;,rowid);
+		oBC.SetSearchExpr(&quot;[Id]=&apos;&quot; + rowid + &quot;&apos;&quot;);
+		oBC.SetViewMode(3);
+		oBC.ExecuteQuery(ForwardOnly);
+		ok = oBC.FirstRecord();
+	}
+	var counter : Number = 0;
+	var mBC : BusComp;
+	var field : String = Inputs.GetProperty(&quot;Field&quot;);
+	var auxfields = Inputs.GetProperty(&quot;Auxiliary Fields&quot;);
+	if (auxfields != &quot;&quot;){
+		auxfields = auxfields.split(&quot;|&quot;);
+	}
+	var inqueryfield : String = Inputs.GetProperty(&quot;queryfield&quot;);
+	var temp = TheApplication().NewPropertySet();
+	if (inqueryfield == &quot;&quot;){
+
+		
+		GetPickInfo(Inputs,temp);
+		inqueryfield = temp.GetProperty(&quot;queryfield&quot;);
+	}
+	var infilter : String = Inputs.GetProperty(&quot;Filter&quot;);
+	var filter : String;
+	var pBC : BusComp;
+	var record : PropertySet;
+	var lov : Array = new Array();
+	var gField = inqueryfield;
+
+	if (ftype == &quot;Pick&quot;){
+		pBC = oBC.GetPicklistBusComp(field);
+	}
+	else if (ftype == &quot;Mvg&quot;){
+		mBC  = oBC.GetMVGBusComp(field);
+			try{
+			pBC = mBC.GetAssocBusComp();
+		}
+		catch(e){
+			//nothing
+			Outputs.SetProperty(&quot;ERR&quot;,e.toString());
+		}
+	
+	}
+	filter = &quot;[&quot; + gField + &quot;] IS NOT NULL&quot;;
+	if (infilter != &quot;&quot;){
+		filter = &quot;[&quot; + gField + &quot;]&quot; + infilter;
+		if (op != &quot;&quot;){
+			if (auxfields.length &gt; 0){
+				for (var j = 0; j &lt; auxfields.length; j++){
+					filter = filter + &quot; &quot; + op + &quot; [&quot; + auxfields[j] + &quot;]&quot; + infilter;
+				}
+			}
+		}
+	}						 
+
+	pBC.ClearToQuery();
+	pBC.SetSearchExpr(filter);
+
+	if (auxfields.length &gt; 0){
+		for (var i = 0; i &lt; auxfields.length; i++){
+			pBC.ActivateField(auxfields[i]);
+			
+		}
+	}
+	pBC.ExecuteQuery(ForwardOnly);
+	if (pBC.FirstRecord()){
+		do{
+			record = TheApplication().NewPropertySet();
+			record.SetProperty(&quot;Id&quot;,pBC.GetFieldValue(&quot;Id&quot;));
+			record.SetProperty(gField,pBC.GetFieldValue(gField));
+			if (auxfields.length &gt; 0){
+				for (var j = 0; j &lt; auxfields.length; j++){
+					record.SetProperty(auxfields[j],pBC.GetFieldValue(auxfields[j]));
+				}
+			}
+			counter++;
+			lov.push(pBC.GetFieldValue(gField));
+			Outputs.AddChild(record);
+		}while (pBC.NextRecord());	
+	}
+	Outputs.SetProperty(&quot;LOV&quot;,lov.join(&quot;|&quot;));
+	Outputs.SetProperty(&quot;Record Count&quot;,counter);
+	Outputs.SetProperty(&quot;queryfield&quot;,gField);
+	Outputs.SetProperty(&quot;searchexpr&quot;,filter);
+	//clean up
+	 record = null;
+	 temp = null;
+	 lov = null;
+	 pBC = null;
+	 field = null;
+	 counter = null;
+	 oBC = null;
+	 oBO = null;
+	 BOName = null;
+	 tempBC = null;
+	 aBO = null;
+	 rowid = null;
+	 gField = null;
+	 infilter = null;
+	 filter = null;
+	 inqueryfield = null;
+	 ftype = null;
+	 auxfields = null;
+	 mBC = null;
+	 op = null;
+	 
+}"
+			   SEQUENCE="5"
+			   UPDATED="06/03/2017 12:05:45"
+			   UPDATED_BY="SADMIN"
+			   CREATED="04/21/2017 11:39:31"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="SavePendingChanges"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function SavePendingChanges (Inputs, Outputs){
+	var oBO = TheApplication().ActiveBusObject();
+	var bcname = Inputs.GetProperty(&quot;Business Component&quot;);
+	var oBC = oBO.GetBusComp(bcname);
+	oBC.WriteRecord();
+}"
+			   SEQUENCE="6"
+			   UPDATED="05/24/2017 10:33:37"
+			   UPDATED_BY="SADMIN"
+			   CREATED="05/04/2017 10:39:50"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="Service_InvokeMethod"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function Service_InvokeMethod (MethodName, Inputs, Outputs)
+{
+
+}"
+			   SEQUENCE="7"
+			   UPDATED="05/24/2017 10:33:37"
+			   UPDATED_BY="SADMIN"
+			   CREATED="05/04/2017 10:39:50"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="Service_PreCanInvokeMethod"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function Service_PreCanInvokeMethod (MethodName, &amp;CanInvoke)
+{
+	return (ContinueOperation);
+}"
+			   SEQUENCE="8"
+			   UPDATED="05/24/2017 10:33:37"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/16/2017 19:13:02"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+			<BUSINESS_SERVICE_SERVER_SCRIPT
+			   INACTIVE="N"
+			   NAME="Service_PreInvokeMethod"
+			   PROGRAM_LANGUAGE="JS"
+			   SCRIPT="function Service_PreInvokeMethod (MethodName, Inputs, Outputs)
+{
+	try{
+		switch(MethodName){
+			case &quot;GetData&quot; : GetData(Inputs,Outputs);
+							 break;
+			case &quot;GetPickValues&quot; : GetPickValues(Inputs, Outputs);
+							 break;
+			case &quot;GetAssocValues&quot; : GetAssocValues(Inputs, Outputs);
+							 break;
+			case &quot;SavePendingChanges&quot;: SavePendingChanges(Inputs,Outputs);
+							break;
+			case &quot;GetPickInfo&quot; : GetPickInfo(Inputs,Outputs);
+							break;
+			case &quot;Associate&quot; : Associate(Inputs,Outputs);
+							break;
+			default        : break;
+		}
+	}
+	catch(e){
+		TheApplication().RaiseErrorText(e.toString());
+	}
+	return (CancelOperation);
+}"
+			   SEQUENCE="9"
+			   UPDATED="05/24/2017 10:41:28"
+			   UPDATED_BY="SADMIN"
+			   CREATED="03/16/2017 19:13:02"
+			   CREATED_BY="SADMIN">
+			</BUSINESS_SERVICE_SERVER_SCRIPT>
+		</BUSINESS_SERVICE>
+	</PROJECT>
+</REPOSITORY>
+
+
+
